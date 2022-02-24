@@ -1,13 +1,15 @@
-let sidebarModal = document.getElementById("sidebarModal");
-let sidebarOpen = document.getElementById("sidebarOpen");
-let closeBtn = document.getElementById("closeBtn");
+let sidebarModa = document.getElementById("sidebarodal");
+let sidebarOpe = document.getElementById("sidebarOpen");
+let closeBt = document.getElementById("closeBtn");
 
-sidebarOpen.addEventListener("click", function(){
-  sidebarModal.classList.add("shw");
+sidebarOpe.addEventListener("click", function(){
+  sidebarModa.classList.add("shw");
+  sidebarModa.classList.remove("shww")
+
 })
 
 
-closeBtn.addEventListener("click", function(){
-  sidebarModal.classList.remove("shw");
-  
+closeBt.addEventListener("click", function(){
+  console.log('ok');
+  sidebarModa.classList.add("shww")
 })

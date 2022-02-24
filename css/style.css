@@ -35,11 +35,15 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center !important;
       -ms-flex-align: center !important;
           align-items: center !important;
   color: #bac34e !important;
   color: #fff !important;
+  padding: 20px !important;
 }
 
 .sidebar {
@@ -49,10 +53,6 @@
 .sidebar .offcanvas {
   width: 300px !important;
   background-color: #0a472e;
-}
-
-.sidebar .offcanvas-header {
-  padding: 20px 0 !important;
 }
 
 .btn-close {
@@ -91,18 +91,15 @@
   -webkit-box-align: center !important;
       -ms-flex-align: center !important;
           align-items: center !important;
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 14px;
 }
 
 .sidebar__item:nth-child(1) {
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
-}
-
-.sidebar__item-link {
-  text-decoration: none;
-  color: #fff;
-  text-transform: capitalize;
-  font-size: 14px;
 }
 
 .sidebar__item-span {
@@ -121,7 +118,7 @@
   top: 0;
   left: -300px;
   z-index: 10;
-  background-color: red;
+  background-color: #0a472e;
 }
 
 .shw {
@@ -143,6 +140,30 @@
   background-color: transparent;
   font-size: 14px;
   color: #fff;
+}
+
+.closebutton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  padding: 15px;
+  font-size: 14px;
+}
+
+.sidebar__itemlink {
+  text-decoration: none;
+  color: #fff;
+}
+
+.sidebar__item-home {
+  padding: 10px 15px;
+  border-top: 1px solid #073522;
 }
 
 .header__search {
@@ -588,7 +609,7 @@
   bottom: 0;
   width: 110px;
   height: 140px;
-  border: 1px solid #f0ecec;
+  border: 1px solid #e0dede;
   -webkit-transition: all 0.3s ease !important;
   transition: all 0.3s ease !important;
 }
@@ -782,7 +803,7 @@
 .offcanvas-body__hr-span {
   width: 1px;
   height: 130px;
-  background-color: #f0ecec;
+  background-color: #e0dede;
 }
 
 @media screen and (max-width: 1300px) {
@@ -837,6 +858,10 @@
   .sidebar {
     display: block;
   }
+}
+
+.shww {
+  left: -300px;
 }
 
 .site-info {
@@ -1001,8 +1026,190 @@
   display: inline-block;
   border-radius: 50%;
   font-size: 14px;
-  background-color: #bac34e;
+  background-color: transparent;
+  border: 2px solid #919b38;
   margin-right: 10px;
+}
+
+.product__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+  list-style: none;
+}
+
+.product__item {
+  width: 23%;
+  border: 1px solid #e0dede;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.product__content {
+  overflow: hidden;
+  position: relative;
+}
+
+.product__icons {
+  position: absolute;
+  bottom: -40px;
+  left: 33%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.product__item:hover .product__icons {
+  bottom: 0;
+}
+
+.product__icons .bx-low-vision {
+  font-size: 17px;
+  padding: 8px;
+  border: 0.5px solid #aaa;
+  border-radius: 50%;
+  color: #555;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.product__icons .bx-low-vision:hover {
+  color: #fff;
+  background-color: #0a472e;
+}
+
+.product__icons .bx-heart {
+  font-size: 17px;
+  padding: 8px;
+  border: 0.5px solid #aaa;
+  border-radius: 50%;
+  color: #555;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.product__icons .bx-heart:hover {
+  color: #fff;
+  background-color: #0a472e;
+}
+
+.product__icons .bx-right-arrow-circle {
+  font-size: 17px;
+  padding: 8px;
+  border: 0.5px solid #aaa;
+  border-radius: 50%;
+  color: #555;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.product__icons .bx-right-arrow-circle:hover {
+  color: #fff;
+  background-color: #0a472e;
+}
+
+.product__img {
+  width: 100%;
+}
+
+.product__span {
+  font-size: 14px;
+  color: #bac34e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5px;
+}
+
+.product__item-text {
+  color: #000;
+  text-align: center;
+  font-size: 15px;
+  padding: 0 10px;
+  margin: 0 0 5px 0;
+}
+
+.product__price {
+  font-size: 16px;
+  color: #e0bf96;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 7px 0;
+}
+
+.product__linya {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 1px;
+  margin: 0 auto;
+  background-color: #919b38;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  margin-bottom: 7px;
+}
+
+.product__item:hover .product__linya {
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+}
+
+.product__link {
+  font-family: 'Mazzard Soft H Med';
+  font-size: 14px;
+  color: #000;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 24px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.product__link:hover {
+  color: #bac34e;
+}
+
+.bx-chevrons-right {
+  position: relative;
+  left: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.product__link:hover .bx-chevrons-right {
+  -webkit-transform: translate(5px);
+          transform: translate(5px);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 @font-face {
