@@ -1,0 +1,101 @@
+@import '../variables';
+
+.product{
+  padding: 60px 0;
+}
+
+.product__title{
+  font-size: 30px;
+  color: $header-icons-color;
+  display: flex;
+  align-items: center;
+  line-height: 0;
+}
+.product__title::before{
+  content: '';
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 50%;
+  font-size: 14px;
+  background-color: #bac34e;
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

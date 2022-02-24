@@ -1,0 +1,54 @@
+@import '../variables';
+
+.site-info{
+  padding: 21px 0;
+}
+.site-info__span{
+  font-size: 14px;
+  color: $black;
+}
+.site-info__list{
+  width: 207px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+.site-info__item-link{
+  text-decoration: none;
+  font-size: 12px;
+  color: $color-primary;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+}
+.site-info__item-link:hover{
+  color: $site-info-hover;
+}
+
+@media screen and (max-width:990px) {
+  .site-info-section{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
