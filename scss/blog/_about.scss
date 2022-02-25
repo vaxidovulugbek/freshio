@@ -1,0 +1,209 @@
+
+
+.about-page{
+  background-image: url('../../img/about-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  // height: 400px;
+  // object-fit: cover;
+}
+.about-page__content{
+  padding: 140px 0;
+  display: flex;
+  align-items: center;
+}
+.about-page__link{
+  font-size: 14px;
+  color: $color-primary;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.about-page__link:hover{
+  color: $site-info-hover;
+}
+.about-page__content .bx-chevron-right{
+  font-size: 14px;
+  color: $color-primary;
+}
+.about-page__about-link{
+  font-size: 14px;
+  color: $color-primary;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.about-page__about-link:hover{
+  color: $site-info-hover;
+}
+.about-us{
+  padding: 50px 0;
+}
+.about-us__title{
+  font-size: 28px;
+  color: $title;
+  margin-bottom: 16px;
+}
+.about-us__subtitle{
+  font-size: 28px;
+  color: $title;
+  margin-bottom: 16px;
+  margin-left: 30px;
+}
+.about-us__content{
+  display: flex;
+}
+.about-us-company{
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+.about-us-company__subtitle{
+  font-size: 18px;
+  color: $title;
+}
+.about-us-company__text{
+  font-family: 'Mazzard Soft H Med';
+  font-size: 14px;
+  color: $primari-white;
+  font-weight: 600;
+}
+.about-us-company__subtext{
+  font-size: 14px;
+  color: $primari-white;
+}
+.about-us-company__span{
+  font-size: 14px;
+  color: $primari-white;
+}
+.about-us-company__img{
+  color: $primari-white;
+}
+.abou-contacts{
+  display: flex;
+  align-items: center;
+}
+.abou-contact__call{
+  font-family: 'Mazzard Soft H Med';
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: $black;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.abou-contact__tel{
+  font-size: 20px;
+  color: $site-info-hover;
+}
+
+
+.about-infos{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+// .about-infos__contents{
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   width: 50%;
+// }
+.abou-contacts{
+  width: 20%;
+}
+.about-infos__list{
+  width: 35%;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: 0;
+}
+.about-infos__link{
+  font-size: 20px;
+  color: $site-info-hover;
+  transition: all 0.3s ease;
+}
+.about-infos__item{
+  margin-right: 12px;
+  transition: all 0.3s ease;
+}
+.about-infos__item:hover .bxl-facebook{
+  color: $blue;
+  transition: all 0.3s ease;
+}
+.about-infos__item:hover .bxl-twitter{
+  color: $blue-sky;
+  transition: all 0.3s ease;
+}
+.about-infos__item:hover .bxl-youtube{
+  color: $red;
+  transition: all 0.3s ease;
+}
+.about-infos__item:hover .bxl-instagram{
+  color: $blue;
+  transition: all 0.3s ease;
+}
+
+
+.footer-logo{
+  padding: 0 60px;
+  margin-top: 5%;
+}
+
+// @media screen and (max-width:990px) {
+  // .about-page {
+  //   background-size: cover;
+  // }
+// }
+@media screen and (max-width:1440px){
+  .about-infos__list{
+    width: 15%;
+  }
+}
+@media screen and (max-width:990px) {
+  .abou-contacts{
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  .about-infos__list{
+    width: 50%;
+  }
+  .about-infos__img{
+    width: 50%;
+  }
+  .footer-logo{
+    padding: 0 150px 0 0;
+  }
+}
+
+@media screen and (max-width:760px) {
+  .about-infos{
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-infos__img{
+    width: unset;
+  }
+  .about-infos__list{
+    width: unset;
+  }
+  .abou-contacts{
+    width: unset;
+  }
+  .about-infos__list{
+    margin-bottom: 50px;
+  }
+  .footer-logo{
+    padding: 0;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width:576px) {
+  .about-us__content{
+    display: flex;
+    flex-direction: column;
+  }
+  .about-us-company{
+    margin-bottom: 20px;
+  }
+}

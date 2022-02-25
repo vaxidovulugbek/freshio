@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <title>imtihon-3 about-page</title>
+
+
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+ 
+  <section>
+    <div class="menu-bar">
+      <ul class="menu-bar__list">
+        <li class="menu-bar__item">
+          <i class='bx bx-store'></i>
+          <span class="menu-bar__span">shop</span>
+        </li>
+        <li class="menu-bar__item">
+          <i class='bx bx-heart' ></i>
+          <span class="menu-bar__span">wishlist</span>
+        </li>
+        <li class="menu-bar__item">
+          <i class='bx bx-user' data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" ></i>
+          <span class="menu-bar__span"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">accaund</span>
+        
+        
+        </li>
+        <li class="menu-bar__item">
+          <i class='bx bx-search'  data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"></i>
+          <span class="menu-bar__span" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">search</span>
+
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+              <div class="offcanvas-header">
+                <form class="menubar-form" action="https://echo.htmlacademy.ru">
+                  <i class='bx bx-search' ></i>
+                  <input class="menubar-form__input" type="search" name="search" placeholder="Enter Keyword..." required>
+                  <span class="menubar-form__span">Search</span>
+                </form>
+              </div>
+            </div>
+        </li>
+
+      </ul>
+    </div>
+  </section> 
+
+  <div class="father">
+    <section>
+        <div class="about-header">
+          <div class="container-inner">
+
+          <div class="header__site d-flex align-items-center justify-content-between">
+
+
+            <div class="sidebar">
+              <button class="header__btn" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
+                  class='bx bx-menu'></i></button>
+              <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+                aria-labelledby="offcanvasWithBothOptionsLabel">
+
+                <div class="offcanvas-header">
+                  <button type="button" class="btn-close text-reset " data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                  <p class="sidebar__close" data-bs-dismiss="offcanvas">Close</p>
+                </div>
+
+                <div class="offcanvas-body">
+                  <ul class="sidebar__list">
+                    <li class="sidebar__item"><a class="sidebar__item-link" href="#"><span
+                          class="sidebar__item-span">home</span> <button id="sidebarOpen" class="sidebar__item-btn"
+                          type="button"><i class='bx bx-chevrons-right'></i></button></i></a>
+                      <!-- <button id="sidebarOpen">-></button> -->
+                      <div class="dd" id="sidebarodal">
+                        <button class="closebutton" id="closeBtn"><i class='bx bx-chevrons-left'></i>Back to
+                          home</button>
+                        <ul class="sidebar__list">
+                          <li class="sidebar__item-home"><a class="sidebar__itemlink" href="#">Home 1</a></li>
+                          <li class="sidebar__item-home"><a class="sidebar__itemlink" href="#">Home 2</a></li>
+                          <li class="sidebar__item-home"><a class="sidebar__itemlink" href="#">Home 3</a></li>
+                          <li class="sidebar__item-home"><a class="sidebar__itemlink" href="#">Home 4</a></li>
+                          <li class="sidebar__item-home"><a class="sidebar__itemlink" href="#">Home 5</a></li>
+                          <li class="sidebar__item-home"><a class="sidebar__itemlink" href="#">Home 6</a></li>
+                          <li class="sidebar__item-home"><a class="sidebar__itemlink" href="#">Home 7</a></li>
+                          <li class="sidebar__item-home"><a class="sidebar__itemlink" href="#">Home 8</a></li>
+                        </ul>
+                      </div>
+
+                    </li>
+                    <li class="sidebar__item sidebar-open"><a class="sidebar__item-link" href="#"><span
+                          class="sidebar__item-span">shop</span> <button id="sideOpen" class="sidebar__item-btn"><i
+                            class='bx bx-chevrons-right'></i></button></a>
+                      <div class="dd" id="sidemodal">
+                        <button class="closebutton" id="closBtn"><i class='bx bx-chevrons-left'></i>Back to
+                          home</button>
+                        <ul class="sidebar__list">
+                          <li class="sidebar__item-home"><a class="sidebar__itemlink" href="#">Categories 1 <button
+                                id="sideOpendBtn"><i class='bx bxs-chevrons-down'></i></button></a>
+                            <div class="dd" id="sedemodales">
+
+                              <button class="closebutton" id="closebt"><i class='bx bx-chevrons-left'></i>Back to
+                                home</button>
+                              <ul class="sidebar__list sidebar__listd">
+                                <li>
+
+
+
+                                  <!-- shu joyiga menyu responsiv yozilai -->
+
+
+
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="sidebar__item-home"><a class="sidebar__itemlink" href="#">Categories 2 <i
+                                class='bx bxs-chevrons-down'></i></a></li>
+                          <li class="sidebar__item-home"><a class="sidebar__itemlink" href="#">Categories 3 <i
+                                class='bx bxs-chevrons-down'></i></a></li>
+                          <li class="sidebar__item-home"><a class="sidebar__itemlink" href="#">Categories 4 <i
+                                class='bx bxs-chevrons-down'></i></a></li>
+                        </ul>
+                      </div>
+                    </li>
+
+
+                    <li class="sidebar__item sidebar-open"><a class="sidebar__item-link" href="#"><span
+                          class="sidebar__item-span"> pages</span> <button id="sideOpend" class="sidebar__item-btn"><i
+                            class='bx bx-chevrons-right'></i></button></a>
+                      <div class="dd" id="sidemoda">
+                        <button class="closebutton" id="closButtonn"><i class='bx bx-chevrons-left'></i>Back to
+                          home</button>
+                        <ul class="sidebar__list sidebar__listd">
+                          <li class="sidebar__item-home"><a class="sidebar__itemlink" href="#"><img class="sidebar__pic"
+                                src="img/img-fluid-five.jpg" alt=""></a></li>
+                          <li class="sidebar__item-home"><a class="sidebar__itemlink" href="#"><img class="sidebar__pic"
+                                src="img/img-fluid-four.jpg" alt=""></a></li>
+                          <li class="sidebar__item-home"><a class="sidebar__itemlink" href="#"><img class="sidebar__pic"
+                                src="img/img-fluid-seven.jpg" alt=""></a></li>
+                          <li class="sidebar__item-home"><a class="sidebar__itemlink" href="#"><img class="sidebar__pic"
+                                src="img/img-fluid-one.jpg" alt=""></a></li>
+                          <li class="sidebar__item-home"><a class="sidebar__itemlink" href="#"><img class="sidebar__pic"
+                                src="img/img-fluid-five.jpg" alt=""></a></li>
+                          <li class="sidebar__item-home"><a class="sidebar__itemlink" href="#"><img class="sidebar__pic"
+                                src="img/img-fluid-two.jpg" alt=""></a></li>
+                          <li class="sidebar__item-home"><a class="sidebar__itemlink" href="#"><img class="sidebar__pic"
+                                src="img/img-fluid-six.jpg" alt=""></a></li>
+                        </ul>
+                      </div>
+
+                    </li>
+                    <li class="sidebar__item sidebar-open"><a class="sidebar__item-link" href="#"><span
+                          class="sidebar__item-span">blog</span></a></li>
+                    <li class="sidebar__item sidebar-open"><a class="sidebar__item-link" href="#"><span
+                          class="sidebar__item-span">contact</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- user modal -->
+
+
+            <a class="header__logo" href="#"><img src="img/logo.jpg" alt="logo" width="130" height="71"></a>
+            <div class="header__search  align-items-center justify-content-between">
+              <i class='bx bx-search'></i>
+              <input class="header__input" type="search" name="search" placeholder="Enter Keyword...">
+              <span class="header__search-span">search</span>
+            </div>
+            
+
+            <div class="header-contacts  align-items-center">
+              <img class="me-3" src="img/aboutcontact-img.png" alt="" width="36" height="36">
+              <div class="header-contact">
+                <h4 class="header-contact__call">CALL US 24/7</h4>
+                <span class="header-contact__tel">(1800)-88-66-991</span>
+              </div>
+            </div>
+
+            <!-- user modal chiqishi -->
+
+            <ul class="header__list d-flex align-items-center">
+              <li class="header__item header__item--activ"><i class='bx bx-user' data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+                  
+                
+                  
+                </li>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                  aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <a href="#"><img src="img/logo.jpg" alt="logo" width="130" height="71"></a>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <h3 class="offcanvas-body__title">Existing Account Login</h3>
+                    <form class="offcanvas-body__form" action="https://echo.htmlacademy.ru">
+                      <input class="offcanvas-body__input" type="email" name="email" id="email"
+                        placeholder="Email Address" required>
+                      <input class="offcanvas-body__input" type="password" name="password" id="password"
+                        placeholder="Password" required>
+                      <div class="offcanvas-body__check">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Remember Me
+                          </label>
+                        </div>
+                        <a class="offcanvas-body__forgot" href="#">Forgot password?</a>
+                      </div>
+                      <button class="offcanvas-body__btn" type="submit">Login</button>
+                    </form>
+
+                    <span class="offcanvas-body__connect-info">Connect with Social Networks</span>
+                    <ul class="offcanvas-body__list d-flex align-items-center">
+                      <li class="offcanvas-body__item"><a class="offcanvas-body__item-link" href="#"><i
+                            class='bx bxl-facebook'></i></a></li>
+                      <li class="offcanvas-body__item"><a class="offcanvas-body__item-link" href="#"><i
+                            class='bx bxl-google'></i></a></li>
+                      <li class="offcanvas-body__item"><a class="offcanvas-body__item-link" href="#"><i
+                            class='bx bxl-twitter'></i></a></li>
+                    </ul>
+
+                    <span class="offcanvas-body__connect-info">New Account Register</span>
+                    <form class="offcanvas-body__form mt-3" action="https://echo.htmlacademy.ru">
+                      <input class="offcanvas-body__input" type="text" id="fname" name="fist-name"
+                        placeholder="First Name" required>
+                      <input class="offcanvas-body__input" type="text" id="lname" name="last-name"
+                        placeholder="Last Name" required>
+                      <input class="offcanvas-body__input" type="email" name="email" placeholder="Email Address"
+                        required>
+                      <input class="offcanvas-body__input" type="password" name="password" id="password"
+                        placeholder="Password" required>
+
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                        <label class="form-check-label" for="flexCheckDefault">
+                          I agree to the terms.
+                        </label>
+                      </div>
+                      <button class="offcanvas-body__btn" type="submit">Create an Account</button>
+                    </form>
+
+                    <div class="d-flex justify-content-between">
+                      <div class="offcanvas-chek-info">
+                        <span class="offcanvas-chek-info__span">Language</span>
+                        <ul class="offcanvas-body__flags-list">
+                          <li class="offcanvas-chek-info__info"><a class="offcanvas-chek-info__link" href="#"><img
+                                src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/1.jpg" alt="usa" width="17"
+                                height="11"></a></li>
+                          <li class="offcanvas-chek-info__info"><a class="offcanvas-chek-info__link" href="#"><img
+                                src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/2.jpg" alt="usa" width="17"
+                                height="11"></a></li>
+                          <li class="offcanvas-chek-info__info"><a class="offcanvas-chek-info__link" href="#"><img
+                                src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/3.jpg" alt="usa" width="17"
+                                height="11"></a></li>
+                          <li class="offcanvas-chek-info__info"><a class="offcanvas-chek-info__link" href="#"><img
+                                src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/4.jpg" alt="usa" width="17"
+                                height="11"></a></li>
+                          <li class="offcanvas-chek-info__info"><a class="offcanvas-chek-info__link" href="#"><img
+                                src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/5.jpg" alt="usa" width="17"
+                                height="11"></a></li>
+                          <li class="offcanvas-chek-info__info"><a class="offcanvas-chek-info__link" href="#"><img
+                                src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/6.jpg" alt="usa" width="17"
+                                height="11"></a></li>
+                        </ul>
+                        <span class="offcanvas-chek-info__currency">Currensy</span>
+                        <div class="d-flex">
+                          <span class="offcanvas-chek-info__valuta me-2">EUR</span>
+                          <span class="offcanvas-chek-info__valuta">USD</span>
+                        </div>
+                      </div>
+
+                      <span class="offcanvas-body__hr-span"></span>
+
+                      <div class="offcanvas-body__connect-part">
+                        <ul class="offcanvas-body__connect-list">
+                          <li class="offcanvas-body__connect-item"><a class="offcanvas-body__conect-link" href="#"><i
+                                class='bx bx-arrow-to-right'></i>Sign in</a></li>
+                          <li class="offcanvas-body__connect-item"><a class="offcanvas-body__conect-link" href="#"><i
+                                class='bx bx-user-check'></i>My account</a></li>
+                          <li class="offcanvas-body__connect-item"><a class="offcanvas-body__conect-link" href="#"><i
+                                class='bx bxs-heart-circle'></i> Wishlist (0)</a></li>
+                          <li class="offcanvas-body__connect-item"><a class="offcanvas-body__conect-link" href="#"><i
+                                class='bx bx-chat'></i>Compare (1)</a></li>
+                          <li class="offcanvas-body__connect-item"><a class="offcanvas-body__conect-link" href="#"><i
+                                class='bx bx-checkbox-checked'></i> Checkout</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                  <!-- user modal end of -->
+
+
+              <li class="header__item header-item header__item--activ"><i class='bx bx-heart'></i>
+                <span class="header-item-span">0</span>
+              </li>
+              <li class="header__item"><i class='bx bx-store'></i>
+                <span class="header-item-span">0</span>
+              </li>
+            </ul>
+
+          </div>       
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="header__navigations header-info d-flex align-items-center">
+            <div class="container">
+
+              <div class="header-info__content">
+                <div class="header-info__category d-flex align-items-center">
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle header-info__btn" role="button" id="dropdownMenuLink"
+                      data-bs-toggle="dropdown" aria-expanded="false"><i class='bx bx-menu'></i>
+                      <p class="header-info__text">Shop by Department</p>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+  
+                </div>
+                <!-- <span class="header-info__span"></span> -->
+                <ul class="header-info__list  align-items-center">
+                  <li class="header-info__item header-info-item">home<i class='bx bx-chevron-down'></i>
+                    <ul class="header-info-item__home-list">
+                      <li class="header-info-item__home-item"><a class="header-info-item__home-link" href="#">home 1</a>
+                      </li>
+                      <li class="header-info-item__home-item"><a class="header-info-item__home-link" href="#">home 2</a>
+                      </li>
+                      <li class="header-info-item__home-item"><a class="header-info-item__home-link" href="#">home 3</a>
+                      </li>
+                      <li class="header-info-item__home-item"><a class="header-info-item__home-link" href="#">home 4</a>
+                      </li>
+                      <li class="header-info-item__home-item"><a class="header-info-item__home-link" href="#">home 5</a>
+                      </li>
+                      <li class="header-info-item__home-item"><a class="header-info-item__home-link" href="#">home 6</a>
+                      </li>
+                      <li class="header-info-item__home-item"><a class="header-info-item__home-link" href="#">home 7</a>
+                      </li>
+                      <li class="header-info-item__home-item"><a class="header-info-item__home-link" href="#">home 8</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header-info__item header-info-item">shop<i class='bx bx-chevron-down'></i>
+                    <div class="header-info-item__shop-content">
+                      <ul class="header-info-item__shop-list">
+                        <li class="header-info-item__shop-item">
+                          <h3 class="header-info-item__shop-title">categories 1</h3>
+                        </li>
+                        <li class="header-info-item__shop-item"><a class="header-info-item__shop-link"
+                            href="#">vegatable</a></li>
+                        <li class="header-info-item__shop-item"><a class="header-info-item__shop-link" href="#">tomato</a>
+                        </li>
+                        <li class="header-info-item__shop-item"><a class="header-info-item__shop-link"
+                            href="#">cabbage</a></li>
+                        <li class="header-info-item__shop-item"><a class="header-info-item__shop-link" href="#">juice</a>
+                        </li>
+                        <li class="header-info-item__shop-item"><a class="header-info-item__shop-link" href="#">meat</a>
+                        </li>
+                      </ul>
+                      <ul class="header-info-item__shop-list">
+                        <li class="header-info-item__shop-item">
+                          <h3 class="header-info-item__shop-title">categories 2</h3>
+                        </li>
+                        <li class="header-info-item__shop-item"><a class="header-info-item__shop-link" href="#">beef</a>
+                        </li>
+                        <li class="header-info-item__shop-item"><a class="header-info-item__shop-link" href="#">pork</a>
+                        </li>
+                        <li class="header-info-item__shop-item"><a class="header-info-item__shop-link"
+                            href="#">coconut</a></li>
+                        <li class="header-info-item__shop-item"><a class="header-info-item__shop-link"
+                            href="#">broccoli</a></li>
+                        <li class="header-info-item__shop-item"><a class="header-info-item__shop-link" href="#">fish</a>
+                        </li>
+                      </ul>
+                      <ul class="header-info-item__shop-list">
+                        <li class="header-info-item__shop-item">
+                          <h3 class="header-info-item__shop-title">categories 3</h3>
+                        </li>
+                        <li class="header-info-item__shop-item"><a class="header-info-item__shop-link"
+                            href="#">seafood</a></li>
+                        <li class="header-info-item__shop-item"><a class="header-info-item__shop-link"
+                            href="#">octopus</a></li>
+                        <li class="header-info-item__shop-item"><a class="header-info-item__shop-link" href="#">fish</a>
+                        </li>
+                        <li class="header-info-item__shop-item"><a class="header-info-item__shop-link" href="#">pork</a>
+                        </li>
+                        <li class="header-info-item__shop-item"><a class="header-info-item__shop-link" href="#">more</a>
+                        </li>
+                      </ul>
+                      <ul class="header-info-item__shop-list">
+                        <li class="header-info-item__shop-item">
+                          <h3 class="header-info-item__shop-title">categories 4</h3>
+                        </li>
+                        <li class="header-info-item__shop-item"><a class="header-info-item__shop-link"
+                            href="#">vegatables</a></li>
+                        <li class="header-info-item__shop-item"><a class="header-info-item__shop-link" href="#">fresh
+                            meat</a></li>
+                        <li class="header-info-item__shop-item"><a class="header-info-item__shop-link" href="#">fruit &
+                            nut gifts</a></li>
+                        <li class="header-info-item__shop-item"><a class="header-info-item__shop-link" href="#">fresh
+                            berries</a></li>
+                        <li class="header-info-item__shop-item"><a class="header-info-item__shop-link" href="#">fat
+                            freezing</a></li>
+                      </ul>
+  
+                    </div>
+  
+                  </li>
+                  <li class="header-info__item header-info-item">pages<i class='bx bx-chevron-down'></i>
+                    <ul class="header-info-item__pages-list">
+                      <li class="header-info-item__pages-item"><a href="#"><img class="header-info-item__pages-img"
+                            src="img/img-fluid-one.jpg" alt=""></a></li>
+                      <li class="header-info-item__pages-item"><a href="#"><img class="header-info-item__pages-img"
+                            src="img/img-fluid-two.jpg" alt=""></a></li>
+                      <li class="header-info-item__pages-item"><a href="#"><img class="header-info-item__pages-img"
+                            src="img/img-fluid-three.jpg" alt=""></a></li>
+                      <li class="header-info-item__pages-item"><a href="#"><img class="header-info-item__pages-img"
+                            src="img/img-fluid-four.jpg" alt=""></a></li>
+                      <li class="header-info-item__pages-item"><a href="#"><img class="header-info-item__pages-img"
+                            src="img/img-fluid-five.jpg" alt=""></a></li>
+                      <li class="header-info-item__pages-item"><a href="#"><img class="header-info-item__pages-img"
+                            src="img/img-fluid-six.jpg" alt=""></a></li>
+                      <li class="header-info-item__pages-item"><a href="#"><img class="header-info-item__pages-img"
+                            src="img/img-fluid-seven.jpg" alt=""></a></li>
+                    </ul>
+                  </li>
+                  <li class="header-info__item">blog</li>
+                  <li class="header-info__item">contact</li>
+                </ul>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+    </section>
+
+
+    <main>
+      <section class="about-page">
+        <div class="container">
+          <div class="about-page__content">
+            <a class="about-page__link" href="#">Home</a>
+            <i class='bx bx-chevron-right' ></i>
+            <a class="about-page__about-link" href="#">About us</a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="about-us">
+            <h1 class="about-us__title">About us</h1>
+            <h4 class="about-us__subtitle">About us</h4>
+            <div class="about-us__content">
+              <div class="about-us-company">
+                <h5 class="about-us-company__subtitle">Our company</h5>
+                <p class="about-us-company__text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididun.</p>
+                <p class="about-us-company__subtext">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet conse ctetur adipisicing elit.</p>
+                <span class="about-us-company__span">Top quality products</span>
+                <span class="about-us-company__span">Best customer service</span>
+                <span class="about-us-company__span">30-days money back guarantee</span>
+              </div>
+              <div class="about-us-company">
+                <h5 class="about-us-company__subtitle">Our team</h5>
+                <img class="about-us-company__img" src="/n" alt="cms-img" >
+                <p class="about-us-company__text">Lorem set sint occaecat cupidatat non</p>
+                <p class="about-us-company__span">Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+              </div>
+              <div class="about-us-company">
+                <h5 class="about-us-company__subtitle">Testimonials</h5>
+                <p class="about-us-company__span">“Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.”
+                  Lorem ipsum dolor sit</p>
+                  <p class="about-us-company__span">“Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet conse ctetur adipisicing elit. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod.”
+                    Ipsum dolor sit</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container-inner">
+          <div class="about-infos">
+              <div class="abou-contacts  align-items-center">
+                <img class="me-3" src="img/aboutcontact-img.png" alt="" width="36" height="36">
+                <div class="abou-contact">
+                  <h4 class="abou-contact__call">CALL US 24/7</h4>
+                  <span class="abou-contact__tel">(1800)-88-66-991</span>
+                </div>
+              </div>
+              <div class="abou-contacts">
+                <img class="me-3" src="img/about-contact-hat.png" alt="" width="36" height="36">
+                <div class="abou-contact">
+                  <h4 class="abou-contact__call">EMAIL US</h4>
+                  <span class="abou-contact__tel">demo@demo.com</span>
+                </div>
+              </div>
+              <ul class="about-infos__list">
+                <li class="about-infos__item"><a class="about-infos__link" href="#"><i class='bx bxl-facebook'></i></a></li>
+                <li class="about-infos__item"><a class="about-infos__link" href="#"><i class='bx bxl-twitter' ></i></a></li>
+                <li class="about-infos__item"><a class="about-infos__link" href="#"><i class='bx bxl-youtube' ></i></a></li>
+                <li class="about-infos__item"><a class="about-infos__link" href="#"><i class='bx bxl-instagram' ></i></a></li>
+              </ul>
+            <a class="about-infos__img" href="#"><img src="img/about-company.png" alt=""></a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer about-footer">
+          <span class="footer-liny"></span>
+            <a class="footer-logo" href="#"><img src="img/logo.jpg" alt="" width="130" height="70"></a>
+            <div class="footer-store">
+              <h3 class="footer__title">STORE LOCATION</h3>
+              <p class="footer-store__text">9066 Green Lake Drive Chevy Chase, MD 20815</p>
+              <span class="footer-store__date mb-1">Monday - Saturday:</span>
+              <span class="footer-store__dates mb-2">8:00 am - 4:00pm</span>
+              <span class="footer-store__date mb-1">Sunday:</span>
+              <span class="footer-store__dates">9:00 am - 5:00pm</span>
+            </div>
+            <ul class="footer-info-list">
+              <li class="footer-info__item">
+                <h3 class="footer__title">INFORMATION</h3>
+              </li>
+              <li class="footer-info__item"><a class="footer-info__link" href="#">About us</a></li>
+              <li class="footer-info__item"><a class="footer-info__link" href="#">Blog</a></li>
+              <li class="footer-info__item"><a class="footer-info__link" href="#">Check out</a></li>
+              <li class="footer-info__item"><a class="footer-info__link" href="#">Contact</a></li>
+              <li class="footer-info__item"><a class="footer-info__link" href="#">Service</a></li>
+            </ul>
+            <ul class="footer-info-list">
+              <li class="footer-info__item">
+                <h3 class="footer__title">MY ACCOUNT</h3>
+              </li>
+              <li class="footer-info__item"><a class="footer-info__link" href="#">My Account</a></li>
+              <li class="footer-info__item"><a class="footer-info__link" href="#">Contact</a></li>
+              <li class="footer-info__item"><a class="footer-info__link" href="#">Shopping cart</a></li>
+              <li class="footer-info__item"><a class="footer-info__link" href="#">Shop</a></li>
+            </ul>
+            <ul class="footer-info-list">
+              <li class="footer-info__item">
+                <h3 class="footer__title">CATEGORIES</h3>
+              </li>
+              <li class="footer-info__item"><a class="footer-info__link" href="#">Fruits & Vegetables</a></li>
+              <li class="footer-info__item"><a class="footer-info__link" href="#">Dairy Products</a></li>
+              <li class="footer-info__item"><a class="footer-info__link" href="#">Package Foods</a></li>
+              <li class="footer-info__item"><a class="footer-info__link" href="#">Beverage</a></li>
+              <li class="footer-info__item"><a class="footer-info__link" href="#">Beverage</a></li>
+            </ul>
+          <span class="footer-linya"></span>
+          <span class="footer__c">Copyright © 2021 Freshio. All Rights Reserved.</span>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

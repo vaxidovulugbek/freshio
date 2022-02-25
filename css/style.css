@@ -11,6 +11,13 @@
   padding: 0 15px;
 }
 
+.container-inner {
+  max-width: 1710px;
+  width: 100%;
+  margin: auto;
+  padding: 0 25px;
+}
+
 .header {
   padding: 0 0 25px 0;
 }
@@ -380,13 +387,6 @@
   height: 30px;
   background-color: #3B6C58;
   display: inline-block;
-}
-
-.dropdown-menu {
-  position: relative;
-  top: 14px !important;
-  left: -7% !important;
-  width: 108% !important;
 }
 
 .header-info__list {
@@ -836,6 +836,25 @@
   background-color: #e0dede;
 }
 
+.header-contact__call {
+  font-family: 'Mazzard Soft H Med';
+  margin: 0 0 5px 0;
+  font-size: 12px;
+  color: #000;
+  font-weight: 600;
+}
+
+.header-contact__tel {
+  color: #bac34e;
+  font-size: 18px;
+}
+
+.header-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media screen and (max-width: 1300px) {
   .header-info-item__pages-img {
     width: 100px;
@@ -887,6 +906,9 @@
   }
   .sidebar {
     display: block;
+  }
+  .header-contacts {
+    display: none;
   }
 }
 
@@ -1486,10 +1508,13 @@
   transition: all 0.2s ease;
 }
 
-.product-modal .modal {
-  width: 500px;
-  margin: 0 auto;
-  background-color: blue;
+.modal-content {
+  width: 1050px;
+  height: 600px;
+  background-color: red;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
 }
 
 .product-modal .modal-body {
@@ -2246,6 +2271,10 @@
           justify-content: space-between;
 }
 
+.custumers {
+  margin-bottom: 85px;
+}
+
 .custumers-info__img {
   width: 50%;
   height: 380px;
@@ -2255,7 +2284,7 @@
 }
 
 .custumers-info__content {
-  width: 40% !important;
+  width: 40%;
 }
 
 .custumers-info__title {
@@ -2358,6 +2387,710 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 760px) {
+  .custumers-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .custumers-info__img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .custumers-info__content {
+    width: 100%;
+  }
+  .custumers-carusel {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .custumers-caru {
+    width: 100%;
+  }
+  .custumers-carusel__pic {
+    width: 100%;
+  }
+  .custumers-carusel__content {
+    padding: 30px 0;
+  }
+}
+
+.companies-blog__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  padding: 60px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid #e5e5e5;
+}
+
+.companies-blog__item {
+  width: 15%;
+}
+
+.companies-blog__img {
+  opacity: 0.4;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  height: auto;
+}
+
+.companies-blog__img:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 990px) {
+  .companies-blog__item {
+    width: 20%;
+  }
+  .companies-blog__item-non {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .companies-blog__item {
+    width: 25%;
+  }
+  .companies-blog__item-none {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .companies-blog__item {
+    width: 40%;
+  }
+  .companies-blog__item-nonee {
+    display: none;
+  }
+}
+
+.about-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-contact-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 48%;
+  padding: 40px 0;
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+}
+
+.about-contact-me__img {
+  width: 64px;
+  height: 64px;
+  margin: 0 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about-contact-me__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 25px;
+  border-left: 1px solid #e2e2e2;
+}
+
+.about-contact-me__span {
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 7px;
+  text-transform: capitalize;
+}
+
+.about-contact-me__call {
+  font-family: 'Mazzard Soft H Med';
+  font-size: 12px;
+  color: #000;
+  margin-bottom: 7px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.about-contact-me__tel {
+  color: #bac34e;
+  text-decoration: none;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.about-contact-me__tel:hover {
+  color: #bac34e;
+}
+
+.about-contact-me__bt {
+  color: #0a472e;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.about-contact-me__text {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.about-contact-me__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+  padding: 5px 15px;
+  border-radius: 50px;
+  border: 1px solid #e2e2e2;
+}
+
+.about-contact-me__input {
+  border: none;
+  background-color: transparent;
+  color: #000;
+  outline: none;
+}
+
+.about-contact-me__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  border: none;
+}
+
+@media screen and (max-width: 990px) {
+  .about-contact-me__img {
+    margin: 0 30px;
+  }
+  .about-contact-me__form {
+    width: 85%;
+  }
+  .about-contact-me__input {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .about-contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-contact-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .about-contact-me__img {
+    margin: 0 0 10px 0;
+  }
+  .about-contact-me__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-contact-me__content {
+    border: none;
+  }
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 60px 0 0 0;
+}
+
+.footer-store {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__title {
+  font-family: 'Mazzard Soft H Med';
+  font-size: 12px;
+  margin: 0 0 30px 0;
+  color: #000;
+  font-weight: 600;
+}
+
+.footer-store__text {
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 18px;
+  width: 80%;
+}
+
+.footer-store__date {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.footer-store__dates {
+  font-size: 14px;
+}
+
+.footer-info-list {
+  width: 18%;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-info__link {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.footer-info__link:hover {
+  color: #bac34e;
+}
+
+.footer-info__item {
+  margin-bottom: 10px;
+}
+
+.footer-accept {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-accept__img {
+  width: 220px;
+  height: 70px;
+  margin-bottom: 40px;
+}
+
+.footer-accept__span {
+  font-family: 'Mazzard Soft H Med';
+  font-size: 13px;
+  font-weight: 600;
+  color: #000;
+}
+
+.footer__c {
+  font-size: 14px;
+  color: #555;
+  padding: 40px 0;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  text-align: center;
+}
+
+.footer-linya {
+  width: 100%;
+  height: 0.3px;
+  background-color: #aaa;
+  margin-top: 40px;
+}
+
+.footer-liny {
+  width: 100%;
+  margin-bottom: 60px;
+  height: 0.3px;
+  background-color: #aaa;
+}
+
+.about-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 60px;
+}
+
+@media screen and (max-width: 990px) {
+  .footer-store {
+    width: 33%;
+  }
+  .footer-info-list {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .footer-store {
+    width: unset;
+  }
+  .footer-info-list {
+    width: unset;
+    margin-bottom: 20px;
+  }
+  .footer-store__text {
+    width: unset;
+  }
+  .footer-store {
+    margin-bottom: 30px;
+  }
+}
+
+.about-page {
+  background-image: url("../../img/about-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.about-page__content {
+  padding: 140px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-page__link {
+  font-size: 14px;
+  color: #555;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.about-page__link:hover {
+  color: #bac34e;
+}
+
+.about-page__content .bx-chevron-right {
+  font-size: 14px;
+  color: #555;
+}
+
+.about-page__about-link {
+  font-size: 14px;
+  color: #555;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.about-page__about-link:hover {
+  color: #bac34e;
+}
+
+.about-us {
+  padding: 50px 0;
+}
+
+.about-us__title {
+  font-size: 28px;
+  color: #0a472e;
+  margin-bottom: 16px;
+}
+
+.about-us__subtitle {
+  font-size: 28px;
+  color: #0a472e;
+  margin-bottom: 16px;
+  margin-left: 30px;
+}
+
+.about-us__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-us-company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 30px;
+}
+
+.about-us-company__subtitle {
+  font-size: 18px;
+  color: #0a472e;
+}
+
+.about-us-company__text {
+  font-family: 'Mazzard Soft H Med';
+  font-size: 14px;
+  color: #aaa;
+  font-weight: 600;
+}
+
+.about-us-company__subtext {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.about-us-company__span {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.about-us-company__img {
+  color: #aaa;
+}
+
+.abou-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.abou-contact__call {
+  font-family: 'Mazzard Soft H Med';
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: #000;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.abou-contact__tel {
+  font-size: 20px;
+  color: #bac34e;
+}
+
+.about-infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.abou-contacts {
+  width: 20%;
+}
+
+.about-infos__list {
+  width: 35%;
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+
+.about-infos__link {
+  font-size: 20px;
+  color: #bac34e;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.about-infos__item {
+  margin-right: 12px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.about-infos__item:hover .bxl-facebook {
+  color: #4c68a2;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.about-infos__item:hover .bxl-twitter {
+  color: #53d1F8;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.about-infos__item:hover .bxl-youtube {
+  color: #ca4444;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.about-infos__item:hover .bxl-instagram {
+  color: #4c68a2;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.footer-logo {
+  padding: 0 60px;
+  margin-top: 5%;
+}
+
+@media screen and (max-width: 1440px) {
+  .about-infos__list {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .abou-contacts {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  .about-infos__list {
+    width: 50%;
+  }
+  .about-infos__img {
+    width: 50%;
+  }
+  .footer-logo {
+    padding: 0 150px 0 0;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .about-infos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-infos__img {
+    width: unset;
+  }
+  .about-infos__list {
+    width: unset;
+  }
+  .abou-contacts {
+    width: unset;
+  }
+  .about-infos__list {
+    margin-bottom: 50px;
+  }
+  .footer-logo {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about-us__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-us-company {
+    margin-bottom: 20px;
+  }
+}
+
+.dropdown-menu {
+  position: relative;
+  top: 14px !important;
+  left: -7% !important;
+  width: 108% !important;
+  padding: 10px 20px;
+}
+
+.dropdown-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 0;
+  font-size: 14px;
+  color: #000;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.dropdown-item:hover {
+  color: #bac34e;
+  background-color: transparent;
 }
 
 @font-face {
@@ -2465,7 +3198,7 @@
 
 body {
   font-family: 'Mazzard Soft H';
-  background-image: url("../img/body-bg-up.jpg");
+  background-image: url("../img/body-bg-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;

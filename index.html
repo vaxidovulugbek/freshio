@@ -9,6 +9,9 @@
   <title>imtihon-3</title>
 
 
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -44,9 +47,15 @@
         </li>
         <li class="menu-bar__item">
           <i class='bx bx-user' data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" ></i>
-          <span class="menu-bar__span"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">accaund</span>
+          <span class="menu-bar__span" >accaund</span>
 
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+
+
+
+
+
+
+          <!-- <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header">
               <a href="#"><img src="img/logo.jpg" alt="logo" width="130" height="71"></a>
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -122,7 +131,18 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
+
+
+
+
+
+
+
+
+
+
+
         </li>
         <li class="menu-bar__item">
           <i class='bx bx-search'  data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"></i>
@@ -213,7 +233,7 @@
 
 
               <div class="sidebar">
-                <button class="header__btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class='bx bx-menu' ></i></button>
+                <button class="header__btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class='bx bx-menu'></i></button>
                   <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
 
                     <div class="offcanvas-header">
@@ -299,7 +319,6 @@
               
 <!-- user modal -->
 
-
               <a class="header__logo" href="#"><img src="img/logo.jpg" alt="logo" width="130" height="71"></a>
               <div class="header__search  align-items-center justify-content-between">
                 <i class='bx bx-search'></i>
@@ -312,87 +331,88 @@
               <ul class="header__list d-flex align-items-center">
                 <li class="header__item header__item--activ"><i class='bx bx-user'data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
 
-                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                    <div class="offcanvas-header">
-                      <a href="#"><img src="img/logo.jpg" alt="logo" width="130" height="71"></a>
-                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                      <h3 class="offcanvas-body__title">Existing Account Login</h3>
-                      <form class="offcanvas-body__form" action="https://echo.htmlacademy.ru">
-                        <input class="offcanvas-body__input" type="email" name="email" id="email" placeholder="Email Address" required>
-                        <input class="offcanvas-body__input" type="password" name="password" id="password" placeholder="Password" required>
-                        <div class="offcanvas-body__check">
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
-                            <label class="form-check-label" for="flexCheckDefault">
-                              Remember Me
-                            </label>
-                          </div>
-                          <a class="offcanvas-body__forgot" href="#">Forgot password?</a>
-                        </div>
-                        <button class="offcanvas-body__btn" type="submit">Login</button>
-                      </form>
-
-                      <span class="offcanvas-body__connect-info">Connect with Social Networks</span>
-                      <ul class="offcanvas-body__list d-flex align-items-center">
-                        <li class="offcanvas-body__item"><a class="offcanvas-body__item-link" href="#"><i class='bx bxl-facebook'></i></a></li>
-                        <li class="offcanvas-body__item"><a class="offcanvas-body__item-link" href="#"><i class='bx bxl-google'></i></a></li>
-                        <li class="offcanvas-body__item"><a class="offcanvas-body__item-link" href="#"><i class='bx bxl-twitter'></i></a></li>
-                      </ul>
-
-                      <span class="offcanvas-body__connect-info">New Account Register</span>
-                      <form class="offcanvas-body__form mt-3" action="https://echo.htmlacademy.ru">
-                        <input class="offcanvas-body__input" type="text" id="fname" name="fist-name" placeholder="First Name" required>
-                        <input class="offcanvas-body__input" type="text" id="lname" name="last-name" placeholder="Last Name" required>
-                        <input class="offcanvas-body__input" type="email" name="email" placeholder="Email Address" required> 
-                        <input class="offcanvas-body__input" type="password" name="password" id="password" placeholder="Password" required>
-
-                        <div class="form-check mb-3">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
-                          <label class="form-check-label" for="flexCheckDefault">
-                            I agree to the terms.
-                          </label>
-                        </div>
-                        <button class="offcanvas-body__btn" type="submit">Create an Account</button>
-                      </form>
-
-                      <div class="d-flex justify-content-between">
-                        <div class="offcanvas-chek-info">
-                          <span class="offcanvas-chek-info__span">Language</span>
-                          <ul class="offcanvas-body__flags-list">
-                            <li class="offcanvas-chek-info__info"><a class="offcanvas-chek-info__link" href="#"><img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/1.jpg" alt="usa" width="17" height="11"></a></li>
-                            <li class="offcanvas-chek-info__info"><a class="offcanvas-chek-info__link" href="#"><img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/2.jpg" alt="usa" width="17" height="11"></a></li>
-                            <li class="offcanvas-chek-info__info"><a class="offcanvas-chek-info__link" href="#"><img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/3.jpg" alt="usa" width="17" height="11"></a></li>
-                            <li class="offcanvas-chek-info__info"><a class="offcanvas-chek-info__link" href="#"><img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/4.jpg" alt="usa" width="17" height="11"></a></li>
-                            <li class="offcanvas-chek-info__info"><a class="offcanvas-chek-info__link" href="#"><img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/5.jpg" alt="usa" width="17" height="11"></a></li>
-                            <li class="offcanvas-chek-info__info"><a class="offcanvas-chek-info__link" href="#"><img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/6.jpg" alt="usa" width="17" height="11"></a></li>
-                          </ul>
-                          <span class="offcanvas-chek-info__currency">Currensy</span>
-                          <div class="d-flex">
-                            <span class="offcanvas-chek-info__valuta me-2">EUR</span>
-                            <span class="offcanvas-chek-info__valuta">USD</span>
-                          </div>
-                        </div>
-
-                        <span class="offcanvas-body__hr-span"></span>
-
-                        <div class="offcanvas-body__connect-part">
-                          <ul class="offcanvas-body__connect-list">
-                            <li class="offcanvas-body__connect-item"><a class="offcanvas-body__conect-link" href="#"><i class='bx bx-arrow-to-right'></i>Sign in</a></li>
-                            <li class="offcanvas-body__connect-item"><a class="offcanvas-body__conect-link" href="#"><i class='bx bx-user-check' ></i>My account</a></li>
-                            <li class="offcanvas-body__connect-item"><a class="offcanvas-body__conect-link" href="#"><i class='bx bxs-heart-circle'></i> Wishlist (0)</a></li>
-                            <li class="offcanvas-body__connect-item"><a class="offcanvas-body__conect-link" href="#"><i class='bx bx-chat'></i>Compare (1)</a></li>
-                            <li class="offcanvas-body__connect-item"><a class="offcanvas-body__conect-link" href="#"><i class='bx bx-checkbox-checked'></i> Checkout</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                 
 
 <!-- user modal end of -->
 
                 </li>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <a href="#"><img src="img/logo.jpg" alt="logo" width="130" height="71"></a>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <h3 class="offcanvas-body__title">Existing Account Login</h3>
+                    <form class="offcanvas-body__form" action="https://echo.htmlacademy.ru">
+                      <input class="offcanvas-body__input" type="email" name="email" id="email" placeholder="Email Address" required>
+                      <input class="offcanvas-body__input" type="password" name="password" id="password" placeholder="Password" required>
+                      <div class="offcanvas-body__check">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Remember Me
+                          </label>
+                        </div>
+                        <a class="offcanvas-body__forgot" href="#">Forgot password?</a>
+                      </div>
+                      <button class="offcanvas-body__btn" type="submit">Login</button>
+                    </form>
+
+                    <span class="offcanvas-body__connect-info">Connect with Social Networks</span>
+                    <ul class="offcanvas-body__list d-flex align-items-center">
+                      <li class="offcanvas-body__item"><a class="offcanvas-body__item-link" href="#"><i class='bx bxl-facebook'></i></a></li>
+                      <li class="offcanvas-body__item"><a class="offcanvas-body__item-link" href="#"><i class='bx bxl-google'></i></a></li>
+                      <li class="offcanvas-body__item"><a class="offcanvas-body__item-link" href="#"><i class='bx bxl-twitter'></i></a></li>
+                    </ul>
+
+                    <span class="offcanvas-body__connect-info">New Account Register</span>
+                    <form class="offcanvas-body__form mt-3" action="https://echo.htmlacademy.ru">
+                      <input class="offcanvas-body__input" type="text" id="fname" name="fist-name" placeholder="First Name" required>
+                      <input class="offcanvas-body__input" type="text" id="lname" name="last-name" placeholder="Last Name" required>
+                      <input class="offcanvas-body__input" type="email" name="email" placeholder="Email Address" required> 
+                      <input class="offcanvas-body__input" type="password" name="password" id="password" placeholder="Password" required>
+
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                        <label class="form-check-label" for="flexCheckDefault">
+                          I agree to the terms.
+                        </label>
+                      </div>
+                      <button class="offcanvas-body__btn" type="submit">Create an Account</button>
+                    </form>
+
+                    <div class="d-flex justify-content-between">
+                      <div class="offcanvas-chek-info">
+                        <span class="offcanvas-chek-info__span">Language</span>
+                        <ul class="offcanvas-body__flags-list">
+                          <li class="offcanvas-chek-info__info"><a class="offcanvas-chek-info__link" href="#"><img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/1.jpg" alt="usa" width="17" height="11"></a></li>
+                          <li class="offcanvas-chek-info__info"><a class="offcanvas-chek-info__link" href="#"><img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/2.jpg" alt="usa" width="17" height="11"></a></li>
+                          <li class="offcanvas-chek-info__info"><a class="offcanvas-chek-info__link" href="#"><img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/3.jpg" alt="usa" width="17" height="11"></a></li>
+                          <li class="offcanvas-chek-info__info"><a class="offcanvas-chek-info__link" href="#"><img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/4.jpg" alt="usa" width="17" height="11"></a></li>
+                          <li class="offcanvas-chek-info__info"><a class="offcanvas-chek-info__link" href="#"><img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/5.jpg" alt="usa" width="17" height="11"></a></li>
+                          <li class="offcanvas-chek-info__info"><a class="offcanvas-chek-info__link" href="#"><img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/6.jpg" alt="usa" width="17" height="11"></a></li>
+                        </ul>
+                        <span class="offcanvas-chek-info__currency">Currensy</span>
+                        <div class="d-flex">
+                          <span class="offcanvas-chek-info__valuta me-2">EUR</span>
+                          <span class="offcanvas-chek-info__valuta">USD</span>
+                        </div>
+                      </div>
+
+                      <span class="offcanvas-body__hr-span"></span>
+
+                      <div class="offcanvas-body__connect-part">
+                        <ul class="offcanvas-body__connect-list">
+                          <li class="offcanvas-body__connect-item"><a class="offcanvas-body__conect-link" href="#"><i class='bx bx-arrow-to-right'></i>Sign in</a></li>
+                          <li class="offcanvas-body__connect-item"><a class="offcanvas-body__conect-link" href="#"><i class='bx bx-user-check' ></i>My account</a></li>
+                          <li class="offcanvas-body__connect-item"><a class="offcanvas-body__conect-link" href="#"><i class='bx bxs-heart-circle'></i> Wishlist (0)</a></li>
+                          <li class="offcanvas-body__connect-item"><a class="offcanvas-body__conect-link" href="#"><i class='bx bx-chat'></i>Compare (1)</a></li>
+                          <li class="offcanvas-body__connect-item"><a class="offcanvas-body__conect-link" href="#"><i class='bx bx-checkbox-checked'></i> Checkout</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <li class="header__item header-item header__item--activ"><i class='bx bx-heart'></i>
                   <span class="header-item-span">0</span>
                 </li>
@@ -409,9 +429,15 @@
                         <p class="header-info__text">Shop by Department</p> 
                       </button>
                       <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#"><i class='bx bxs-pizza' ></i> fruit & vegatables</a></li>
+                        <li><a class="dropdown-item" href="#"><i class='bx bxs-pizza' ></i> supplyments <i class='bx bx-chevron-right' ></i></a></li>
+                        <li><a class="dropdown-item" href="#"><i class='bx bxs-pizza' ></i> dairy bread & eggs <i class='bx bx-chevron-right' ></i></a></li>
+                        <li><a class="dropdown-item" href="#"><i class='bx bxs-pizza' ></i> package foods</a></li>
+                        <li><a class="dropdown-item" href="#"><i class='bx bxs-pizza' ></i> beauty & care <i class='bx bx-chevron-right' ></i></a></li>
+                        <li><a class="dropdown-item" href="#"><i class='bx bxs-pizza' ></i> health & wellness</a></li>
+                        <li><a class="dropdown-item" href="#"><i class='bx bxs-pizza' ></i> baby & care</a></li>
+                        <li><a class="dropdown-item" href="#"><i class='bx bxs-pizza' ></i> home care</a></li>
+                        <li><a class="dropdown-item" href="#"><i class='bx bxs-pizza' ></i> hot offers</a></li>
                       </ul>
                     </div>
 
@@ -564,231 +590,331 @@
             </ul>
           </div>
       </section>
+<main>
+  <section>
+    <div class="container">
+      <div class="product">
+        <h2 class="product__title">Featured Products</h2>
 
-      <section>
-        <div class="container">
-          <div class="product">
-            <h2 class="product__title">Featured Products</h2>
-
-            <ul class="product__list">
-              <li class="product__item">
-                <div class="product__content">
-                  <img class="product__img" src="img/product-carrot.jpg" alt="product-apple">
-                  <div class="product__icons">
-                    <i class='bx bx-low-vision'></i>
-                    <i class='bx bx-heart'></i>
-                    <i class='bx bx-right-arrow-circle'></i>
-                  </div>
-                </div>
-                <div>
-                  <span class="product__span">Home</span>
-                  <p class="product__item-text">Grassfit Organic Turmeric Super Ghree</p>
-                  <span class="product__price">$11.9</span>
-                  <span class="product__linya"></span>
-                  <a class="product__link" href="#">Add to card <i class='bx bx-chevrons-right'></i></a>
-                </div>
-              </li>
-              <li class="product__item">
-                <div class="product__content">
-                  <img class="product__img" src="img/product-carrot.jpg" alt="product-apple">
-                  <div class="product__icons">
-                    <i class='bx bx-low-vision'></i>
-                    <i class='bx bx-heart'></i>
-                    <i class='bx bx-right-arrow-circle'></i>
-                  </div>
-                </div>
-                <div>
-                  <span class="product__span">Home</span>
-                  <p class="product__item-text">Grassfit Organic Turmeric Super Ghree</p>
-                  <span class="product__price">$11.9</span>
-                  <span class="product__linya"></span>
-                  <a class="product__link" href="#">Add to card <i class='bx bx-chevrons-right'></i></a>
-                </div>
-              </li>
-              <li class="product__item">
-                <div class="product__content">
-                  <img class="product__img" src="img/product-carrot.jpg" alt="product-apple">
-                  <div class="product__icons">
-                    <i class='bx bx-low-vision'></i>
-                    <i class='bx bx-heart'></i>
-                    <i class='bx bx-right-arrow-circle'></i>
-                  </div>
-                </div>
-                <div>
-                  <span class="product__span">Home</span>
-                  <p class="product__item-text">Grassfit Organic Turmeric Super Ghree</p>
-                  <span class="product__price">$11.9</span>
-                  <span class="product__linya"></span>
-                  <a class="product__link" href="#">Add to card <i class='bx bx-chevrons-right'></i></a>
-                </div>
-              </li>
-              <li class="product__item">
-                <div class="product__content">
-                  <img class="product__img" src="img/product-carrot.jpg" alt="product-apple">
-                  <div class="product__icons">
-                   
-                    <div class="product-modal">
-                        <i class='bx bx-low-vision'  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
-                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel"></h5>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                  <div class="product-modal__content">
-                                    <img class="product-modal__img" src="img/product-carrot.jpg" alt="carrot-img">
+        <ul class="product__list">
+          <li class="product__item">
+            <div class="product__content">
+              <img class="product__img" src="img/product-carrot.jpg" alt="product-apple">
+              <div class="product__icons">
+                <i class='bx bx-low-vision'></i>
+                <i class='bx bx-heart'></i>
+                <i class='bx bx-right-arrow-circle'></i>
+              </div>
+            </div>
+            <div>
+              <span class="product__span">Home</span>
+              <p class="product__item-text">Grassfit Organic Turmeric Super Ghree</p>
+              <span class="product__price">$11.9</span>
+              <span class="product__linya"></span>
+              <a class="product__link" href="#">Add to card <i class='bx bx-chevrons-right'></i></a>
+            </div>
+          </li>
+          <li class="product__item">
+            <div class="product__content">
+              <img class="product__img" src="img/product-carrot.jpg" alt="product-apple">
+              <div class="product__icons">
+                <i class='bx bx-low-vision'></i>
+                <i class='bx bx-heart'></i>
+                <i class='bx bx-right-arrow-circle'></i>
+              </div>
+            </div>
+            <div>
+              <span class="product__span">Home</span>
+              <p class="product__item-text">Grassfit Organic Turmeric Super Ghree</p>
+              <span class="product__price">$11.9</span>
+              <span class="product__linya"></span>
+              <a class="product__link" href="#">Add to card <i class='bx bx-chevrons-right'></i></a>
+            </div>
+          </li>
+          <li class="product__item">
+            <div class="product__content">
+              <img class="product__img" src="img/product-carrot.jpg" alt="product-apple">
+              <div class="product__icons">
+                <i class='bx bx-low-vision'></i>
+                <i class='bx bx-heart'></i>
+                <i class='bx bx-right-arrow-circle'></i>
+              </div>
+            </div>
+            <div>
+              <span class="product__span">Home</span>
+              <p class="product__item-text">Grassfit Organic Turmeric Super Ghree</p>
+              <span class="product__price">$11.9</span>
+              <span class="product__linya"></span>
+              <a class="product__link" href="#">Add to card <i class='bx bx-chevrons-right'></i></a>
+            </div>
+          </li>
+          <li class="product__item">
+            <div class="product__content">
+              <img class="product__img" src="img/product-carrot.jpg" alt="product-apple">
+              <div class="product__icons">
+    
+                <div class="product-modal">
+                    <i class='bx bx-low-vision'  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel"></h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="product-modal__content">
+                                <img class="product-modal__img" src="img/product-carrot.jpg" alt="carrot-img">
+                              </div>
+                              <img class="product-modal__small-img" src="img/product-carrot.jpg" alt="carrot-img">
+                              <div class="product-modal__info">
+                                  <h3 class="product-modal__title">FRONTIER CO-OP ORGANIC ADOBO SEASONING BLEND</h3>
+                                  <span class="product-modal__price">$29.00</span>
+                                  <p class="product-modal__text">Printed on rigid matt finish and smooth surface.</p>
+                                  <form class="product-modal__form" action="https://echo.htmlacademy.ru">
+                                    <input class="product-modal__input" type="number" min="1">
+                                    <button class="product-modal__btn" type="submit">ED TO CARD</button>
+                                  </form> 
+                                  <div class="product-modal__add">
+                                    <p class="product-modal__addwish">Add to Wishlist</p>
+                                    <p class="product-modal__addcom">Add to Compare</p>
                                   </div>
-                                  <img class="product-modal__small-img" src="img/product-carrot.jpg" alt="carrot-img">
-                                  <div class="product-modal__info">
-                                      <h3 class="product-modal__title">FRONTIER CO-OP ORGANIC ADOBO SEASONING BLEND</h3>
-                                      <span class="product-modal__price">$29.00</span>
-                                      <p class="product-modal__text">Printed on rigid matt finish and smooth surface.</p>
-                                      <form class="product-modal__form" action="https://echo.htmlacademy.ru">
-                                        <input class="product-modal__input" type="number" min="1">
-                                        <button class="product-modal__btn" type="submit">ED TO CARD</button>
-                                      </form> 
-                                      <div class="product-modal__add">
-                                        <p class="product-modal__addwish">Add to Wishlist</p>
-                                        <p class="product-modal__addcom">Add to Compare</p>
-                                      </div>
-                                  </div>
-                                    </div>
-                                  </div>
+                              </div>
                                 </div>
                               </div>
+                            </div>
+                          </div>
                     </div>
-                    <i class='bx bx-heart'></i>
-                    <i class='bx bx-right-arrow-circle'></i>
-                  </div>
-                </div>
-                <div>
-                  <span class="product__span">Home</span>
-                  <p class="product__item-text">Grassfit Organic Turmeric Super Ghree</p>
-                  <span class="product__price">$11.9</span>
-                  <span class="product__linya"></span>
-                  <a class="product__link" href="#">Add to card <i class='bx bx-chevrons-right'></i></a>
-                </div>
-              </li>
-            </ul>
+
+
+                <i class='bx bx-heart'></i>
+                <i class='bx bx-right-arrow-circle'></i>
+              </div>
+            </div>
+            <div>
+              <span class="product__span">Home</span>
+              <p class="product__item-text">Grassfit Organic Turmeric Super Ghree</p>
+              <span class="product__price">$11.9</span>
+              <span class="product__linya"></span>
+              <a class="product__link" href="#">Add to card <i class='bx bx-chevrons-right'></i></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container">
+      <ul class="categories">
+        <li class="categories__fruit">
+          <h3 class="categories__fruit-title">Fruits & Vegatables</h3>
+          <span class="categories__span"></span>
+        </li>
+
+        <li class="categories__bred">
+          <div class="categories__bred-content">
+            <h3 class="categories__bred-title">Dairy Bread & Eggs </h3>
+            <span class="categories__bred-span"></span>
+          </div>
+        </li>
+
+        <li class="categories__package">
+          <div class="categories__package-content">
+            <h3 class="categories__package-title">Package Foods</h3>
+            <span class="categories__package-span"></span>
+          </div>
+        </li>
+
+        <li class="categories__bevarage">
+          <div class="categories__bevarage-content">
+            <h3 class="categories__bevarage-title">Bevarages</h3>
+            <span class="categories__bevarage-span"></span>
+          </div>
+        </li>
+
+        <li class="categories__health">
+          <h3 class="categories__health-title">Health & Wellness</h3>
+          <span class="categories__health-span"></span>
+        </li>
+      </ul>
+
+
+      <!-- <div class="categories">
+        <div class="categories__fruit">
+          <h3 class="categories__fruit-title">Fruits & Vegatables</h3>
+          <span class="categories__span"></span>
+        </div>
+        <div class="categories__bred">
+
+        </div>
+        <div class="categories__health">
+
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="custumers">
+        <div class="custumers-info">
+          <img class="custumers-info__img" src="img/custumer-girl.jpg" alt="custumers">
+          <div class="custumers-info__content">
+            <h2 class="custumers-info__title">A shop for good people by good people</h2>
+            <p class="custumers-info__primary-text">Buy natural, sustainable and chemicalfree products from local sellers across the country.</p>
+            <p class="custumers-info__text">We are a strong community of 100,000+ customers and 600+ sellers who aspire to be good, do good, and spread goodness. We are a democratic, self-sustaining, two-sided marketplace which thrives on trust and is built on community and quality content.</p>
+            <a class="custumers-info__link" href="#">Store Location <i class='bx bx-chevrons-right' ></i></a>
           </div>
         </div>
-      </section>
 
-
-      <section>
-        <div class="container">
-          <ul class="categories">
-            <li class="categories__fruit">
-              <h3 class="categories__fruit-title">Fruits & Vegatables</h3>
-              <span class="categories__span"></span>
-            </li>
-
-            <li class="categories__bred">
-              <div class="categories__bred-content">
-                <h3 class="categories__bred-title">Dairy Bread & Eggs </h3>
-                <span class="categories__bred-span"></span>
-              </div>
-            </li>
-
-            <li class="categories__package">
-              <div class="categories__package-content">
-                <h3 class="categories__package-title">Package Foods</h3>
-                <span class="categories__package-span"></span>
-              </div>
-            </li>
-
-            <li class="categories__bevarage">
-              <div class="categories__bevarage-content">
-                <h3 class="categories__bevarage-title">Bevarages</h3>
-                <span class="categories__bevarage-span"></span>
-              </div>
-            </li>
-
-            <li class="categories__health">
-              <h3 class="categories__health-title">Health & Wellness</h3>
-              <span class="categories__health-span"></span>
-            </li>
-          </ul>
-
-
-          <!-- <div class="categories">
-            <div class="categories__fruit">
-              <h3 class="categories__fruit-title">Fruits & Vegatables</h3>
-              <span class="categories__span"></span>
+        <div class="custumers__carusel custumers-carusel">
+          <div id="carouselExampleIndicators" class="carousel slide custumers-caru" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="categories__bred">
-
-            </div>
-            <div class="categories__health">
-
-            </div>
-          </div> -->
-        </div>
-      </section>
-
-      <section>
-        <div class="container">
-          <div class="custumers">
-            <div class="custumers-info">
-              <img class="custumers-info__img" src="img/custumer-girl.jpg" alt="custumers">
-              <div class="custumers-info__content">
-                <h2 class="custumers-info__title">A shop for good people by good people</h2>
-                <p class="custumers-info__primary-text">Buy natural, sustainable and chemicalfree products from local sellers across the country.</p>
-                <p class="custumers-info__text">We are a strong community of 100,000+ customers and 600+ sellers who aspire to be good, do good, and spread goodness. We are a democratic, self-sustaining, two-sided marketplace which thrives on trust and is built on community and quality content.</p>
-                <a class="custumers-info__link" href="#">Store Location <i class='bx bx-chevrons-right' ></i></a>
-              </div>
-            </div>
-
-            <div class="custumers__carusel custumers-carusel">
-              <div id="carouselExampleIndicators" class="carousel slide custumers-caru" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="custumers-carusel__content">
-                      <img class="custumers-carusel__img" src="img/qoshtirnoq.png" alt="">
-                      <div>
-                        <h2 class="custumers-carusel__title">wy custumer love us</h2>
-                        <p class="custumers-carusel__text">" I have love been regular custumer in Freshio and the reason is I get a variate of organic products and it gives me many opyion to choose from and the Qyality of the produce is good "</p>
-                        <span class="custumers-carusel__span">Pragya Bellandur Store</span>
-                      </div>
-                    </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="custumers-carusel__content">
+                  <img class="custumers-carusel__img" src="img/qoshtirnoq.png" alt="">
+                  <div>
+                    <h2 class="custumers-carusel__title">wy custumer love us</h2>
+                    <p class="custumers-carusel__text">" I have love been regular custumer in Freshio and the reason is I get a variate of organic products and it gives me many opyion to choose from and the Qyality of the produce is good "</p>
+                    <span class="custumers-carusel__span">Pragya Bellandur Store</span>
                   </div>
-                  <div class="carousel-item">
-                    <div class="custumers-carusel__content">
-                      <img class="custumers-carusel__img" src="img/qoshtirnoq.png" alt="">
-                      <div>
-                        <h2 class="custumers-carusel__title">wy custumer love us</h2>
-                        <p class="custumers-carusel__text">" I have love been regular custumer in Freshio and the reason is I get a variate of organic products and it gives me many opyion to choose from and the Qyality of the produce is good "</p>
-                        <span class="custumers-carusel__span">Pragya Bellandur Store</span>
-                      </div>
-                    </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
               </div>
+              <div class="carousel-item">
+                <div class="custumers-carusel__content">
+                  <img class="custumers-carusel__img" src="img/qoshtirnoq.png" alt="">
+                  <div>
+                    <h2 class="custumers-carusel__title">wy custumer love us</h2>
+                    <p class="custumers-carusel__text">" I have love been regular custumer in Freshio and the reason is I get a variate of organic products and it gives me many opyion to choose from and the Qyality of the produce is good "</p>
+                    <span class="custumers-carusel__span">Pragya Bellandur Store</span>
+                  </div>
+                </div>
             </div>
-
-            <img class="custumers-carusel__pic" src="img/custumer-boy.jpg" alt="">
-
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
-      </section>
+
+        <img class="custumers-carusel__pic" src="img/custumer-boy.jpg" alt="">
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="companies-blog">
+        <ul class="companies-blog__list">
+          <li class="companies-blog__item"><a href="#"><img class="companies-blog__img" src="img/company-logoone.jpg" alt="100%-logo"></a></li>
+          <li class="companies-blog__item"><a href="#"><img class="companies-blog__img" src="img/company-logotwo.jpg" alt="organic-logo"></a></li>
+          <li class="companies-blog__item companies-blog__item-nonee"><a href="#"><img class="companies-blog__img" src="img/company-logothre.jpg" alt="natural-logo"></a></li>
+          <li class="companies-blog__item companies-blog__item-none"><a href="#"><img class="companies-blog__img" src="img/company-logofour.jpg" alt="heath-logo"></a></li>
+          <li class="companies-blog__item companies-blog__item-non"><a href="#"><img class="companies-blog__img" src="img/company-logofive.jpg" alt="eco-logo"></a></li>
+          <li class="companies-blog__item companies-blog__item-non"><a href="#"><img class="companies-blog__img" src="img/company-logosix.jpg" alt="natural-logo"></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="about-contact">
+        <div class="about-contact-me">
+          <img class="about-contact-me__img" src="img/aboutcontact-img.png" alt="">
+          <div class="about-contact-me__content">
+            <span class="about-contact-me__span">phone support</span>
+            <span class="about-contact-me__call">CALL US 24/7</span>
+            <a class="about-contact-me__tel" href="tel">(1800)-88-66-991</a>
+            <span class="about-contact-me__bt">contact@example.com</span>
+          </div>
+        </div>
+
+        <div class="about-contact-me">
+          <img class="about-contact-me__img" src="img/about-contact-hat.png" alt="">
+          <div class="about-contact-me__content">
+            <span class="about-contact-me__span">daily updates</span>
+            <span class="about-contact-me__call">subscribe us</span>
+            <p class="about-contact-me__text">sign up and get a vaucher of worth $250.00</p>
+            <form class="about-contact-me__form" action="https://echo.htmlacademy.ru">
+              <input class="about-contact-me__input" type="email" name="emails" placeholder="Email Address..." required>
+              <button class="about-contact-me__button"><i class='bx bx-right-arrow-alt'></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer">
+      <div class="footer-store">
+        <h3 class="footer__title">STORE LOCATION</h3>
+        <p class="footer-store__text">9066 Green Lake Drive Chevy Chase, MD 20815</p>
+        <span class="footer-store__date mb-1">Monday - Saturday:</span>
+        <span class="footer-store__dates mb-2">8:00 am - 4:00pm</span>
+        <span class="footer-store__date mb-1">Sunday:</span>
+        <span class="footer-store__dates">9:00 am - 5:00pm</span>
+      </div>
+      <ul class="footer-info-list">
+        <li class="footer-info__item"><h3 class="footer__title">INFORMATION</h3></li>
+        <li class="footer-info__item"><a class="footer-info__link" href="#">About us</a></li>
+        <li class="footer-info__item"><a class="footer-info__link" href="#">Blog</a></li>
+        <li class="footer-info__item"><a class="footer-info__link" href="#">Check out</a></li>
+        <li class="footer-info__item"><a class="footer-info__link" href="#">Contact</a></li>
+        <li class="footer-info__item"><a class="footer-info__link" href="#">Service</a></li>
+      </ul>
+      <ul class="footer-info-list">
+        <li class="footer-info__item"><h3 class="footer__title">MY ACCOUNT</h3></li>
+        <li class="footer-info__item"><a class="footer-info__link" href="#">My Account</a></li>
+        <li class="footer-info__item"><a class="footer-info__link" href="#">Contact</a></li>
+        <li class="footer-info__item"><a class="footer-info__link" href="#">Shopping cart</a></li>
+        <li class="footer-info__item"><a class="footer-info__link" href="#">Shop</a></li>
+      </ul>
+      <ul class="footer-info-list">
+        <li class="footer-info__item"><h3 class="footer__title">CATEGORIES</h3></li>
+        <li class="footer-info__item"><a class="footer-info__link" href="#">Fruits & Vegetables</a></li>
+        <li class="footer-info__item"><a class="footer-info__link" href="#">Dairy Products</a></li>
+        <li class="footer-info__item"><a class="footer-info__link" href="#">Package Foods</a></li>
+        <li class="footer-info__item"><a class="footer-info__link" href="#">Beverage</a></li>
+        <li class="footer-info__item"><a class="footer-info__link" href="#">Beverage</a></li>
+      </ul>
+      <div class="footer-accept">
+        <h3 class="footer__title">ACCEPT PAYMENT</h3>
+        <img class="footer-accept__img" src="img/footer-img.png" alt="footer-companies">
+        <span class="footer-accept__span">FOLLOW US</span>
+      </div>
+      <span class="footer-linya"></span>
+      <span class="footer__c">Copyright © 2021 Freshio. All Rights Reserved.</span>
+    </div>
+  </div>
+</footer>
 
     </div>
   </div>
 
+<section>
+  <div class="container">
+    <h1 class="animate__animated animate__bounce">An animated element</h1>
+    <h2 class="animate__animated animate__zoomIn" style="--animate-duration: 2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, illum?</h2>
+  </div>
+
+</section>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
 </body>

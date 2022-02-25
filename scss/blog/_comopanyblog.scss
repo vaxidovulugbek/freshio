@@ -1,0 +1,61 @@
+@import '../variables';
+
+.companies-blog__list{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 60px 0;
+  justify-content: space-between;
+  border-top: 1px solid $border-color-2;
+}
+.companies-blog__item{
+  width: 15%;
+}
+.companies-blog__img{
+  opacity: 0.4;
+  transition: all 0.4s ease;
+  height:auto;
+}
+.companies-blog__img:hover{
+  opacity: 1;
+}
+
+@media screen and (max-width:990px) {
+  .companies-blog__item{
+    width: 20%;
+  }
+  .companies-blog__item-non{
+    display: none;
+  }
+}
+
+@media screen and (max-width:760px) {
+  .companies-blog__item{
+    width: 25%;
+  }
+  .companies-blog__item-none{
+    display: none;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .companies-blog__item{
+    width: 40%;
+  }
+  .companies-blog__item-nonee{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

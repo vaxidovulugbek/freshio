@@ -5,6 +5,9 @@
   display: flex;
   justify-content: space-between;
 }
+.custumers{
+  margin-bottom: 85px;
+}
 .custumers-info__img{
   width: 50%;
   height: 380px;
@@ -12,7 +15,7 @@
   border-radius: 10px;
 }
 .custumers-info__content{
-  width: 40% !important;
+  width: 40% ;
 }
 .custumers-info__title{
   font-size: 30px;
@@ -97,5 +100,27 @@
 
 
 @media screen and (max-width:760px){
-  
+  .custumers-info{
+    display: flex;
+    flex-direction: column;
+  }
+  .custumers-info__img{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .custumers-info__content{
+    width: 100%;
+  }
+  .custumers-carusel{
+    flex-direction: column-reverse;
+  }
+  .custumers-caru{
+    width: 100%;
+  }
+  .custumers-carusel__pic{
+    width: 100%;
+  }
+  .custumers-carusel__content{
+    padding: 30px 0;
+  }
 }

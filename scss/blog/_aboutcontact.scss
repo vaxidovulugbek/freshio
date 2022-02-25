@@ -1,0 +1,117 @@
+@import '../variables';
+
+.about-contact{
+  display: flex;
+  justify-content: space-between;
+}
+.about-contact-me{
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  width: 48%;
+  padding: 40px 0;
+  border: 1px solid $white-pri-border;
+  border-radius: 8px;
+}
+.about-contact-me__img{
+  width: 64px;
+  height: 64px;
+  margin: 0 60px;
+  object-fit: cover;
+}
+.about-contact-me__content{
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px;
+  border-left: 1px solid $white-pri-border;
+}
+.about-contact-me__span{
+  font-size: 13px;
+  color: $primari-white;
+  margin-bottom: 7px;
+  text-transform: capitalize;
+}
+.about-contact-me__call{
+  font-family: 'Mazzard Soft H Med';
+  font-size: 12px;
+  color: $black;
+  margin-bottom: 7px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.about-contact-me__tel{
+  color: $site-info-hover;
+  text-decoration: none;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.about-contact-me__tel:hover{
+  color: $site-info-hover;
+}
+.about-contact-me__bt{
+  color: $title;
+  font-size: 14px;
+  cursor: pointer;
+}
+.about-contact-me__text{
+  font-size: 14px;
+  color: $color-primary;
+  margin-bottom: 10px;
+}
+.about-contact-me__form{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  padding:5px 15px;
+  border-radius: 50px;
+  border: 1px solid $white-pri-border;
+  
+}
+.about-contact-me__input{
+  border: none;
+  background-color: transparent;
+  color: $black;
+  outline: none;
+}
+.about-contact-me__button{
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+}
+
+@media screen and (max-width:990px) {
+  .about-contact-me__img{
+    margin: 0 30px;
+  }
+  .about-contact-me__form{
+    width: 85%;
+  }
+  .about-contact-me__input{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width:760px) {
+  .about-contact{
+    flex-direction: column;
+  }
+  .about-contact-me{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .about-contact-me__img{
+    margin: 0 0 10px 0;
+  }
+  .about-contact-me__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-contact-me__content{
+    border: none;
+  }
+}
