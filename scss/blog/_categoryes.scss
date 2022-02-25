@@ -1,0 +1,75 @@
+
+.categories{
+  width: 100%;
+  display: flex;
+}
+.categories__fruit{
+  background-image: url('../../img/category-fruit.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20%;
+  height: 460px;
+  padding: 20px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+.categories__fruit::before{
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color:#2e2a2a28;
+  transition: all 0.4s ease;
+}
+.categories__fruit::after{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-color:#2e2a2a31;
+  transition: all 0.4s ease;
+}
+.categories__fruit:hover::before{
+  top: 0;
+  left: 0;
+}
+.categories__fruit:hover::after{
+  top: 0;
+  left: 0;
+}
+.categories__fruit-title{
+  color: $white;
+  font-size: 20px;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 50px 0 20px 0;
+}
+.categories__span{
+  display: inline-block;
+  width: 50px;
+  height: 1px;
+  background-color: $white;
+  transition: all 0.4s ease;
+}
+.categories__fruit:hover .categories__span{
+  transform: scale(1.7);
+}
+
+
+
+
+
+
+
+
+

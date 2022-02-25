@@ -22,7 +22,9 @@
   color:$white !important;
   padding: 20px !important;
 }
-
+.sidebar .offcanvas-body{
+  padding: 0 !important;
+}
 .sidebar{
   display: none;
 }
@@ -57,17 +59,21 @@
   color: $white;
   text-transform: capitalize;
   font-size: 14px;
+  padding: 15px;
 }
-.sidebar__item:nth-child(1){
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
+.sidebar__item{
+  border-top: 1px solid $border-colors;
 }
-.sidebar__item-span{
-  padding: 7px 20px !important;
+.sidebar__item:nth-child(5){
+  border-top: 1px solid $border-colors;
+  border-bottom: 1px solid $border-colors;
 }
+// .sidebar__item-span{
+//   padding: 7px 20px !important;
+// }
 .sidebar__item .bx-chevrons-right{
   // padding-right: 20px;
-  padding: 7px 20px;
+  // padding: 7px 20px;
   // border-left: 1px solid #000;
   // border-right: 1px solid #000;
   height: 100%;
@@ -111,8 +117,15 @@
   font-size: 14px;
 }
 .sidebar__itemlink{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-decoration: none;
   color: $white;
+  font-size: 14px;
+}
+.sidebar__itemlink:hover{
+  color: $header-primary-color;
 }
 .sidebar__item-home{
   padding: 10px 15px;
@@ -123,6 +136,16 @@
 // right: -333px;
 // bottom: 0;
 // }
+
+
+.offcanvas{
+  overflow-y: scroll !important;
+}
+
+.sidebar__pic{
+  width: 100%;
+  height: 250px;
+}
 
 .header__search{
   display: flex;
@@ -322,7 +345,7 @@
   width: 180px;
   padding: 20px 20px 0 20px;
   background-color: $white;
-  z-index: 100;
+  z-index: 1000;
   list-style: none;
   // z-index: -1;
   // transition: all 0.4s ease;
@@ -382,6 +405,7 @@
   // width: 930px !important;
   width: 1260%;
   display: none;
+  z-index: 1000;
 }
 .header-info__item:hover .header-info-item__shop-content{
   display: block;
@@ -448,6 +472,7 @@
   width: 1300%;
   list-style: none;
   display: none;
+  z-index: 1000;
 }
 .header-info__item:hover .header-info-item__pages-list{
   display: block;
@@ -466,7 +491,7 @@
     bottom: -200px;
   }
   100%{
-    bottom: -177px;
+    bottom: -179px;
   }
 }
 
