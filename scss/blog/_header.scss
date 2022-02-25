@@ -264,6 +264,10 @@
   display: flex;
   justify-content: space-between;
 }
+.header-info__category{
+  width: 100%;
+}
+
 .header-info__text{
   margin: 0 0 0 10px;
   padding: 0;
@@ -287,7 +291,7 @@
   display: flex;
   justify-content: space-between;
 }
-.dropdown::after{
+.dropdownesing::after{
   content: '';
   width: 2px;
   height: 30px;
@@ -701,7 +705,7 @@
     height: 50px;
   }
   .header-info__content{
-    padding: 0 40px;
+    width: 100%;
   }
   .dropdown::after{
     display: none;

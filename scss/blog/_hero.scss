@@ -11,6 +11,27 @@
   // background-repeat: no-repeat;
   // background-size: cover;
 }   
+.up-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  border: none;
+  background-color: transparent;
+  padding: 9px;
+  background-color: $site-info-hover;
+  color: $white;
+  font-size: 22px;
+  border-radius: 50%;
+  z-index: 99000;
+  transition: all 0.4s ease;
+}
+.up-btn:hover{
+  background-color: $btn-3;
+}
+
 .hero .carousel{
   position: relative;
   width: 65%;
@@ -226,6 +247,9 @@
 .hero-flowers{
   width: 45%;
   height: 100%;
+}
+.up-btn{
+  display: none;
 }
 }
 @media screen and (max-width:760px){

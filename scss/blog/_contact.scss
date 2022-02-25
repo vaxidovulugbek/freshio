@@ -1,0 +1,32 @@
+@import '../variables';
+
+.contact{
+  padding: 50px 0;
+}
+.contact__name{
+  width: 25%;
+}
+.contact__title{
+  font-size: 14px;
+  color: $contact-title;
+  margin-bottom: 32px;
+}
+.contact__img{
+  opacity: 0.5;
+  margin-right: 20px;
+}
+.contact__span{
+  font-size: 13px;
+  color: $contact-title;
+}
+.contact__free{
+  padding-bottom: 20px;
+  border-bottom: 0.5px solid $border-color;
+}
+.contact__fre{
+  padding-top: 20px;
+}
+
+
+
+

@@ -165,7 +165,11 @@
 
   <div class="container-fluid">
     <div class="father">
-
+      <a href="#">
+        <button class="up-btn">
+          <i class='bx bx-chevrons-up'></i>
+        </button>
+      </a>
       <section>
         <div class="container">
           <div class="header">
@@ -424,20 +428,59 @@
             <div class="header__navigations header-info d-flex align-items-center">
               <div class="header-info__content">
                 <div class="header-info__category d-flex align-items-center">
-                    <div class="dropdown">
+                    <div class="dropdown dropdownesing">
                       <button class="btn btn-secondary dropdown-toggle header-info__btn"role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><i class='bx bx-menu' ></i>
                         <p class="header-info__text">Shop by Department</p> 
                       </button>
                       <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <li><a class="dropdown-item" href="#"><i class='bx bxs-pizza' ></i> fruit & vegatables</a></li>
-                        <li><a class="dropdown-item" href="#"><i class='bx bxs-pizza' ></i> supplyments <i class='bx bx-chevron-right' ></i></a></li>
-                        <li><a class="dropdown-item" href="#"><i class='bx bxs-pizza' ></i> dairy bread & eggs <i class='bx bx-chevron-right' ></i></a></li>
-                        <li><a class="dropdown-item" href="#"><i class='bx bxs-pizza' ></i> package foods</a></li>
-                        <li><a class="dropdown-item" href="#"><i class='bx bxs-pizza' ></i> beauty & care <i class='bx bx-chevron-right' ></i></a></li>
-                        <li><a class="dropdown-item" href="#"><i class='bx bxs-pizza' ></i> health & wellness</a></li>
-                        <li><a class="dropdown-item" href="#"><i class='bx bxs-pizza' ></i> baby & care</a></li>
-                        <li><a class="dropdown-item" href="#"><i class='bx bxs-pizza' ></i> home care</a></li>
-                        <li><a class="dropdown-item" href="#"><i class='bx bxs-pizza' ></i> hot offers</a></li>
+                        <li><span class="dropdown-menu__pyrmid"></span></li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <div><i class='bx bxs-pizza' ></i> fruit & vegatables</div>
+                          </a>
+                        </li>
+                        <li class="dropdown-menu__item">
+                          <a class="dropdown-item" href="#"><div class="dropdown-i-div"><i class='bx bxs-pizza' ></i> supplyments </div><i class='bx bx-chevron-right' ></i> </a>
+                          <ul class="dropdown-menuitem-list">
+                            <li class="m-1"><a class="dropdown-menu__item-link" href="#">Vegatables</a></li>
+                            <li class="m-1"><a class="dropdown-menu__item-link" href="#">Fresh meat</a></li>
+                            <li class="m-1"><a class="dropdown-menu__item-link" href="#">Fruit & meat gifts</a></li>
+                            <li class="m-1"><a class="dropdown-menu__item-link" href="#">Fresh berries</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown-menu__item">
+                          <a class="dropdown-item" href="#"><div class="dropdown-i-div"><i class='bx bxs-pizza' ></i> dairy bread & eggs </div><i class='bx bx-chevron-right' ></i></a>
+                          <ul class="dropdown-menuitem-list">
+                            <li class="m-1"><a class="dropdown-menu__item-link" href="#">Egg sendvich</a></li>
+                            <li class="m-1"><a class="dropdown-menu__item-link" href="#">Easter bread</a></li>
+                            <li class="m-1"><a class="dropdown-menu__item-link" href="#">Portuguese swet</a></li>
+                            <li class="m-1"><a class="dropdown-menu__item-link" href="#">Challah</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"><div><i class='bx bxs-pizza' ></i> package foods</div></a>
+                        </li>
+                        <li class="dropdown-menu__item">
+                          <a class="dropdown-item" href="#"><div class="dropdown-i-div"><i class='bx bxs-pizza' ></i> beauty & care </div><i class='bx bx-chevron-right' ></i></a>
+                          <ul class="dropdown-menuitem-list">
+                            <li class="m-1"><a class="dropdown-menu__item-link" href="#">Challah</a></li>
+                            <li class="m-1"><a class="dropdown-menu__item-link" href="#">Fat freezing</a></li>
+                            <li class="m-1"><a class="dropdown-menu__item-link" href="#">Skin Resurvasing</a></li>
+                            <li class="m-1"><a class="dropdown-menu__item-link" href="#">Eyelash Extenson</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"><div><i class='bx bxs-pizza' ></i> health & wellness</div></a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"><div><i class='bx bxs-pizza' ></i> baby & care</div></a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"><div><i class='bx bxs-pizza' ></i> home care</div></a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"><div><i class='bx bxs-pizza' ></i> hot offers</div></a>
+                        </li>
                       </ul>
                     </div>
 
@@ -594,65 +637,179 @@
   <section>
     <div class="container">
       <div class="product">
-        <h2 class="product__title">Featured Products</h2>
+        <div class="product__titlecontent">
+          <h2 class="product__title">Featured Products</h2>
+          <a class="product__title-links" href="#">shop all <i class='bx bx-chevrons-right'></i></a>
+        </div>
 
         <ul class="product__list">
           <li class="product__item">
             <div class="product__content">
-              <img class="product__img" src="img/product-carrot.jpg" alt="product-apple">
+              <img class="product__img" src="img/product-limon.jpg" alt="product-apple">
               <div class="product__icons">
-                <i class='bx bx-low-vision'></i>
-                <i class='bx bx-heart'></i>
+
+                <!-- LIMON -->
+
+                <div class="product-modal">
+                  <i class='bx bx-low-vision'  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="product-modal__content">
+                              <img class="product-modal__img" src="img/product-limon.jpg" alt="limon">
+                            </div>
+                            <img class="product-modal__small-img" src="img/product-limon.jpg" alt="limon-img">
+                            <div class="product-modal__info">
+                                <h3 class="product-modal__title">FRONTIER CO-OP ORGANIC ADOBO SEASONING BLEND</h3>
+                                <span class="product-modal__price">$29.00</span>
+                                <p class="product-modal__text">Printed on rigid matt finish and smooth surface.</p>
+                                <form class="product-modal__form" action="https://echo.htmlacademy.ru">
+                                  <input class="product-modal__input" name="numbers" type="number" min="1">
+                                  <button class="product-modal__btn" type="submit">ADD TO CARD</button>
+                                </form> 
+                                <div class="product-modal__add">
+                                  <p class="product-modal__addwish me-4"><i class='bx bxs-heart me-2'></i> Add to Wishlist</p>
+                                  <p class="product-modal__addwish"><i class='bx bx-shuffle me-2'></i> Add to Compare</p>
+                                </div>
+                            </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+
+                <i class='bx bx-heart ms-1 me-1'></i>
                 <i class='bx bx-right-arrow-circle'></i>
               </div>
             </div>
             <div>
-              <span class="product__span">Home</span>
+              <span class="product__span mt-3">Home</span>
               <p class="product__item-text">Grassfit Organic Turmeric Super Ghree</p>
               <span class="product__price">$11.9</span>
               <span class="product__linya"></span>
               <a class="product__link" href="#">Add to card <i class='bx bx-chevrons-right'></i></a>
             </div>
           </li>
-          <li class="product__item">
+          <li class="product__item product__item-none">
             <div class="product__content">
-              <img class="product__img" src="img/product-carrot.jpg" alt="product-apple">
+              <img class="product__img" src="img/product-banana.jpg" alt="product-apple">
               <div class="product__icons">
-                <i class='bx bx-low-vision'></i>
-                <i class='bx bx-heart'></i>
+
+
+                <!-- BANANA -->
+
+                <div class="product-modal">
+                  <i class='bx bx-low-vision'  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="product-modal__content">
+                              <img class="product-modal__img" src="img/product-banana.jpg" alt="banana">
+                            </div>
+                            <img class="product-modal__small-img" src="img/product-banana.jpg" alt="banana-img">
+                            <div class="product-modal__info">
+                                <h3 class="product-modal__title">FRONTIER CO-OP ORGANIC ADOBO SEASONING BLEND</h3>
+                                <span class="product-modal__price">$29.00</span>
+                                <p class="product-modal__text">Printed on rigid matt finish and smooth surface.</p>
+                                <form class="product-modal__form" action="https://echo.htmlacademy.ru">
+                                  <input class="product-modal__input" name="numbers" type="number" min="1">
+                                  <button class="product-modal__btn" type="submit">ADD TO CARD</button>
+                                </form> 
+                                <div class="product-modal__add">
+                                  <p class="product-modal__addwish me-4"><i class='bx bxs-heart me-2'></i> Add to Wishlist</p>
+                                  <p class="product-modal__addwish"><i class='bx bx-shuffle me-2'></i> Add to Compare</p>
+                                </div>
+                            </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+
+                <i class='bx bx-heart ms-1 me-1'></i>
                 <i class='bx bx-right-arrow-circle'></i>
               </div>
             </div>
             <div>
-              <span class="product__span">Home</span>
+              <span class="product__span mt-3">Home</span>
               <p class="product__item-text">Grassfit Organic Turmeric Super Ghree</p>
               <span class="product__price">$11.9</span>
               <span class="product__linya"></span>
               <a class="product__link" href="#">Add to card <i class='bx bx-chevrons-right'></i></a>
             </div>
           </li>
-          <li class="product__item">
+          <li class="product__item product__item-non">
             <div class="product__content">
-              <img class="product__img" src="img/product-carrot.jpg" alt="product-apple">
+              <img class="product__img" src="img/product-apple.jpg" alt="product-apple">
               <div class="product__icons">
-                <i class='bx bx-low-vision'></i>
-                <i class='bx bx-heart'></i>
+
+
+                <!-- APPLES -->
+
+                <div class="product-modal">
+                  <i class='bx bx-low-vision'  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="product-modal__content">
+                              <img class="product-modal__img" src="img/product-apple.jpg" alt="carrot-img">
+                            </div>
+                            <img class="product-modal__small-img" src="img/product-apple.jpg" alt="carrot-img">
+                            <div class="product-modal__info">
+                                <h3 class="product-modal__title">FRONTIER CO-OP ORGANIC ADOBO SEASONING BLEND</h3>
+                                <span class="product-modal__price">$29.00</span>
+                                <p class="product-modal__text">Printed on rigid matt finish and smooth surface.</p>
+                                <form class="product-modal__form" action="https://echo.htmlacademy.ru">
+                                  <input class="product-modal__input" name="numbers" type="number" min="1">
+                                  <button class="product-modal__btn" type="submit">ADD TO CARD</button>
+                                </form> 
+                                <div class="product-modal__add">
+                                  <p class="product-modal__addwish me-4"><i class='bx bxs-heart me-2'></i> Add to Wishlist</p>
+                                  <p class="product-modal__addwish"><i class='bx bx-shuffle me-2'></i> Add to Compare</p>
+                                </div>
+                            </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+
+                <i class='bx bx-heart ms-1 me-1'></i>
                 <i class='bx bx-right-arrow-circle'></i>
               </div>
             </div>
             <div>
-              <span class="product__span">Home</span>
+              <span class="product__span mt-3">Home</span>
               <p class="product__item-text">Grassfit Organic Turmeric Super Ghree</p>
               <span class="product__price">$11.9</span>
               <span class="product__linya"></span>
               <a class="product__link" href="#">Add to card <i class='bx bx-chevrons-right'></i></a>
             </div>
           </li>
-          <li class="product__item">
+          <li class="product__item product__item-no">
             <div class="product__content">
               <img class="product__img" src="img/product-carrot.jpg" alt="product-apple">
               <div class="product__icons">
     
+
+                <!-- CARROTS -->
+
+
                 <div class="product-modal">
                     <i class='bx bx-low-vision'  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
                       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -672,12 +829,12 @@
                                   <span class="product-modal__price">$29.00</span>
                                   <p class="product-modal__text">Printed on rigid matt finish and smooth surface.</p>
                                   <form class="product-modal__form" action="https://echo.htmlacademy.ru">
-                                    <input class="product-modal__input" type="number" min="1">
-                                    <button class="product-modal__btn" type="submit">ED TO CARD</button>
+                                    <input class="product-modal__input" name="numbers" type="number" min="1">
+                                    <button class="product-modal__btn" type="submit">ADD TO CARD</button>
                                   </form> 
                                   <div class="product-modal__add">
-                                    <p class="product-modal__addwish">Add to Wishlist</p>
-                                    <p class="product-modal__addcom">Add to Compare</p>
+                                    <p class="product-modal__addwish me-4"><i class='bx bxs-heart me-2'></i> Add to Wishlist</p>
+                                    <p class="product-modal__addwish"><i class='bx bx-shuffle me-2'></i> Add to Compare</p>
                                   </div>
                               </div>
                                 </div>
@@ -687,12 +844,12 @@
                     </div>
 
 
-                <i class='bx bx-heart'></i>
+                <i class='bx bx-heart ms-1 me-1'></i>
                 <i class='bx bx-right-arrow-circle'></i>
               </div>
             </div>
             <div>
-              <span class="product__span">Home</span>
+              <span class="product__span mt-3">Home</span>
               <p class="product__item-text">Grassfit Organic Turmeric Super Ghree</p>
               <span class="product__price">$11.9</span>
               <span class="product__linya"></span>
@@ -753,6 +910,233 @@
 
         </div>
       </div> -->
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="product">
+        <div class="product__titlecontent">
+          <h2 class="product__title">Featured Products</h2>
+          <a class="product__title-links" href="#">shop all <i class='bx bx-chevrons-right'></i></a>
+        </div>
+
+        <ul class="product__list">
+          <li class="product__item">
+            <div class="product__content">
+              <img class="product__img" src="img/product-brocoli.jpg" alt="product-apple">
+              <div class="product__icons">
+
+                <!-- BROCOLO -->
+
+                <div class="product-modal">
+                  <i class='bx bx-low-vision'  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="product-modal__content">
+                              <img class="product-modal__img" src="img/product-limon.jpg" alt="limon">
+                            </div>
+                            <img class="product-modal__small-img" src="img/product-limon.jpg" alt="limon-img">
+                            <div class="product-modal__info">
+                                <h3 class="product-modal__title">FRONTIER CO-OP ORGANIC ADOBO SEASONING BLEND</h3>
+                                <span class="product-modal__price">$29.00</span>
+                                <p class="product-modal__text">Printed on rigid matt finish and smooth surface.</p>
+                                <form class="product-modal__form" action="https://echo.htmlacademy.ru">
+                                  <input class="product-modal__input" name="numbers" type="number" min="1">
+                                  <button class="product-modal__btn" type="submit">ADD TO CARD</button>
+                                </form> 
+                                <div class="product-modal__add">
+                                  <p class="product-modal__addwish me-4"><i class='bx bxs-heart me-2'></i> Add to Wishlist</p>
+                                  <p class="product-modal__addwish"><i class='bx bx-shuffle me-2'></i> Add to Compare</p>
+                                </div>
+                            </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+
+                <i class='bx bx-heart ms-1 me-1'></i>
+                <i class='bx bx-right-arrow-circle'></i>
+              </div>
+            </div>
+            <div>
+              <span class="product__span mt-3">Home</span>
+              <p class="product__item-text">Grassfit Organic Turmeric Super Ghree</p>
+              <span class="product__price">$11.9</span>
+              <span class="product__linya"></span>
+              <a class="product__link" href="#">Add to card <i class='bx bx-chevrons-right'></i></a>
+            </div>
+          </li>
+          <li class="product__item product__item-none">
+            <div class="product__content">
+              <img class="product__img" src="img/product-potato.jpg" alt="product-apple">
+              <div class="product__icons">
+
+
+                <!-- potato -->
+
+                <div class="product-modal">
+                  <i class='bx bx-low-vision'  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="product-modal__content">
+                              <img class="product-modal__img" src="img/product-banana.jpg" alt="banana">
+                            </div>
+                            <img class="product-modal__small-img" src="img/product-banana.jpg" alt="banana-img">
+                            <div class="product-modal__info">
+                                <h3 class="product-modal__title">FRONTIER CO-OP ORGANIC ADOBO SEASONING BLEND</h3>
+                                <span class="product-modal__price">$29.00</span>
+                                <p class="product-modal__text">Printed on rigid matt finish and smooth surface.</p>
+                                <form class="product-modal__form" action="https://echo.htmlacademy.ru">
+                                  <input class="product-modal__input" name="numbers" type="number" min="1">
+                                  <button class="product-modal__btn" type="submit">ADD TO CARD</button>
+                                </form> 
+                                <div class="product-modal__add">
+                                  <p class="product-modal__addwish me-4"><i class='bx bxs-heart me-2'></i> Add to Wishlist</p>
+                                  <p class="product-modal__addwish"><i class='bx bx-shuffle me-2'></i> Add to Compare</p>
+                                </div>
+                            </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+
+                <i class='bx bx-heart ms-1 me-1'></i>
+                <i class='bx bx-right-arrow-circle'></i>
+              </div>
+            </div>
+            <div>
+              <span class="product__span mt-3">Home</span>
+              <p class="product__item-text">Grassfit Organic Turmeric Super Ghree</p>
+              <span class="product__price">$11.9</span>
+              <span class="product__linya"></span>
+              <a class="product__link" href="#">Add to card <i class='bx bx-chevrons-right'></i></a>
+            </div>
+          </li>
+          <li class="product__item product__item-non">
+            <div class="product__content">
+              <img class="product__img" src="img/product-banana.jpg" alt="product-apple">
+              <div class="product__icons">
+
+
+                <!-- anor -->
+
+                <div class="product-modal">
+                  <i class='bx bx-low-vision'  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="product-modal__content">
+                              <img class="product-modal__img" src="img/product-apple.jpg" alt="carrot-img">
+                            </div>
+                            <img class="product-modal__small-img" src="img/product-apple.jpg" alt="carrot-img">
+                            <div class="product-modal__info">
+                                <h3 class="product-modal__title">FRONTIER CO-OP ORGANIC ADOBO SEASONING BLEND</h3>
+                                <span class="product-modal__price">$29.00</span>
+                                <p class="product-modal__text">Printed on rigid matt finish and smooth surface.</p>
+                                <form class="product-modal__form" action="https://echo.htmlacademy.ru">
+                                  <input class="product-modal__input" name="numbers" type="number" min="1">
+                                  <button class="product-modal__btn" type="submit">ADD TO CARD</button>
+                                </form> 
+                                <div class="product-modal__add">
+                                  <p class="product-modal__addwish me-4"><i class='bx bxs-heart me-2'></i> Add to Wishlist</p>
+                                  <p class="product-modal__addwish"><i class='bx bx-shuffle me-2'></i> Add to Compare</p>
+                                </div>
+                            </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+
+                <i class='bx bx-heart ms-1 me-1'></i>
+                <i class='bx bx-right-arrow-circle'></i>
+              </div>
+            </div>
+            <div>
+              <span class="product__span mt-3">Home</span>
+              <p class="product__item-text">Grassfit Organic Turmeric Super Ghree</p>
+              <span class="product__price">$11.9</span>
+              <span class="product__linya"></span>
+              <a class="product__link" href="#">Add to card <i class='bx bx-chevrons-right'></i></a>
+            </div>
+          </li>
+          <li class="product__item product__item-no">
+            <div class="product__content">
+              <img class="product__img" src="img/product-tarvuz.jpg" alt="product-apple">
+              <div class="product__icons">
+    
+
+                <!-- tarvuz -->
+
+
+                <div class="product-modal">
+                    <i class='bx bx-low-vision'  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel"></h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="product-modal__content">
+                                <img class="product-modal__img" src="img/product-carrot.jpg" alt="carrot-img">
+                              </div>
+                              <img class="product-modal__small-img" src="img/product-carrot.jpg" alt="carrot-img">
+                              <div class="product-modal__info">
+                                  <h3 class="product-modal__title">FRONTIER CO-OP ORGANIC ADOBO SEASONING BLEND</h3>
+                                  <span class="product-modal__price">$29.00</span>
+                                  <p class="product-modal__text">Printed on rigid matt finish and smooth surface.</p>
+                                  <form class="product-modal__form" action="https://echo.htmlacademy.ru">
+                                    <input class="product-modal__input" name="numbers" type="number" min="1">
+                                    <button class="product-modal__btn" type="submit">ADD TO CARD</button>
+                                  </form> 
+                                  <div class="product-modal__add">
+                                    <p class="product-modal__addwish me-4"><i class='bx bxs-heart me-2'></i> Add to Wishlist</p>
+                                    <p class="product-modal__addwish"><i class='bx bx-shuffle me-2'></i> Add to Compare</p>
+                                  </div>
+                              </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+
+
+                <i class='bx bx-heart ms-1 me-1'></i>
+                <i class='bx bx-right-arrow-circle'></i>
+              </div>
+            </div>
+            <div>
+              <span class="product__span mt-3">Home</span>
+              <p class="product__item-text">Grassfit Organic Turmeric Super Ghree</p>
+              <span class="product__price">$11.9</span>
+              <span class="product__linya"></span>
+              <a class="product__link" href="#">Add to card <i class='bx bx-chevrons-right'></i></a>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -870,7 +1254,7 @@
         <span class="footer-store__date mb-1">Sunday:</span>
         <span class="footer-store__dates">9:00 am - 5:00pm</span>
       </div>
-      <ul class="footer-info-list">
+      <ul class="footer-info-list footer-info">
         <li class="footer-info__item"><h3 class="footer__title">INFORMATION</h3></li>
         <li class="footer-info__item"><a class="footer-info__link" href="#">About us</a></li>
         <li class="footer-info__item"><a class="footer-info__link" href="#">Blog</a></li>
