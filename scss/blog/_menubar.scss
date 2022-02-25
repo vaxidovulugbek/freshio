@@ -1,0 +1,82 @@
+@import '../variables';
+
+.menu-bar{
+  position: fixed;
+  // bottom: 0;
+  top: 90vh;
+  width: 100%;
+  z-index: 2000;
+  display: none;
+}
+.menu-bar__list{
+  display: flex;
+  justify-content: space-between;
+  background-color: $white;
+  padding: 0;
+}
+.menu-bar__item{
+  display: flex;
+  width: 25%;
+  padding: 20px 0;
+  border: 1px solid $border-color;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-bar__span{
+  color: $title;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.menu-bar__list .bx-store{
+  font-size: 20px;
+  color: $title;
+}
+.menu-bar__list .bx-heart{
+  font-size: 20px;
+  color: $title;
+}
+.menu-bar__list .bx-user{
+  font-size: 20px;
+  color: $title;
+}
+.menu-bar__list .bx-search{
+  font-size: 20px;
+  color: $title;
+}
+
+.menubar-form{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  // border: 1px solid #000;
+  background-color: $header-inputs-color;
+  border-radius: 30px;
+}
+.menubar-form__input{
+  border: none;
+  width: 100%;
+  padding: 0 15px;
+  outline: none;
+  background-color: transparent;
+  color: $color-primary;
+}
+.menubar-form__span{
+  font-family: 'Mazzard Soft H Med';
+  font-size: 14px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+.menubar-form__span:hover{
+  color: $site-info-hover;
+}
+
+.menu-bar__item .offcanvas-top{
+  height: 90px !important;
+}
+@media screen and (max-width:990px) {
+  .menu-bar{
+    display: block;
+  }
+}

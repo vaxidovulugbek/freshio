@@ -1524,6 +1524,7 @@
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
   grid-gap: 30px;
+  margin-bottom: 100px;
 }
 
 .categories__fruit {
@@ -2127,6 +2128,236 @@
     -ms-grid-row-span: 1;
     grid-row: 5 / 6;
   }
+}
+
+.menu-bar {
+  position: fixed;
+  top: 90vh;
+  width: 100%;
+  z-index: 2000;
+  display: none;
+}
+
+.menu-bar__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+  padding: 0;
+}
+
+.menu-bar__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25%;
+  padding: 20px 0;
+  border: 1px solid #e0dede;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-bar__span {
+  color: #0a472e;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.menu-bar__list .bx-store {
+  font-size: 20px;
+  color: #0a472e;
+}
+
+.menu-bar__list .bx-heart {
+  font-size: 20px;
+  color: #0a472e;
+}
+
+.menu-bar__list .bx-user {
+  font-size: 20px;
+  color: #0a472e;
+}
+
+.menu-bar__list .bx-search {
+  font-size: 20px;
+  color: #0a472e;
+}
+
+.menubar-form {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+  background-color: #f4f4f4;
+  border-radius: 30px;
+}
+
+.menubar-form__input {
+  border: none;
+  width: 100%;
+  padding: 0 15px;
+  outline: none;
+  background-color: transparent;
+  color: #555;
+}
+
+.menubar-form__span {
+  font-family: 'Mazzard Soft H Med';
+  font-size: 14px;
+  font-weight: 700;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.menubar-form__span:hover {
+  color: #bac34e;
+}
+
+.menu-bar__item .offcanvas-top {
+  height: 90px !important;
+}
+
+@media screen and (max-width: 990px) {
+  .menu-bar {
+    display: block;
+  }
+}
+
+.custumers-info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.custumers-info__img {
+  width: 50%;
+  height: 380px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.custumers-info__content {
+  width: 40% !important;
+}
+
+.custumers-info__title {
+  font-size: 30px;
+  color: #0a472e;
+  margin-bottom: 30px;
+}
+
+.custumers-info__primary-text {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.custumers-info__text {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.custumers-info__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #bac34e;
+  font-size: 13px;
+  text-decoration: none;
+  position: relative;
+}
+
+.custumers-info__link:hover {
+  color: #bac34e;
+}
+
+.custumers-info__link:hover .bx-chevrons-right {
+  -webkit-transform: translate(5px);
+          transform: translate(5px);
+}
+
+.custumers-info__link::before {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  width: 100px;
+  height: 0.5px;
+  background-color: #bac34e;
+}
+
+.custumers-carusel {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+}
+
+.custumers-caru {
+  width: 40%;
+}
+
+.custumers-carusel__img {
+  width: 48px;
+  height: 38px;
+  margin-right: 40px;
+}
+
+.custumers-carusel__content {
+  padding: 100px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.custumers-carusel__title {
+  color: #0a472e;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.custumers-carusel__text {
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.custumers-carusel__span {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.custumers-carusel__pic {
+  width: 45%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
 }
 
 @font-face {

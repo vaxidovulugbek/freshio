@@ -31,6 +31,118 @@
     </div>
   </section>
 
+  <section>
+    <div class="menu-bar">
+      <ul class="menu-bar__list">
+        <li class="menu-bar__item">
+          <i class='bx bx-store'></i>
+          <span class="menu-bar__span">shop</span>
+        </li>
+        <li class="menu-bar__item">
+          <i class='bx bx-heart' ></i>
+          <span class="menu-bar__span">wishlist</span>
+        </li>
+        <li class="menu-bar__item">
+          <i class='bx bx-user' data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" ></i>
+          <span class="menu-bar__span"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">accaund</span>
+
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <a href="#"><img src="img/logo.jpg" alt="logo" width="130" height="71"></a>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <h3 class="offcanvas-body__title">Existing Account Login</h3>
+              <form class="offcanvas-body__form" action="https://echo.htmlacademy.ru">
+                <input class="offcanvas-body__input" type="email" name="email" id="email" placeholder="Email Address" required>
+                <input class="offcanvas-body__input" type="password" name="password" id="password" placeholder="Password" required>
+                <div class="offcanvas-body__check">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Remember Me
+                    </label>
+                  </div>
+                  <a class="offcanvas-body__forgot" href="#">Forgot password?</a>
+                </div>
+                <button class="offcanvas-body__btn" type="submit">Login</button>
+              </form>
+
+              <span class="offcanvas-body__connect-info">Connect with Social Networks</span>
+              <ul class="offcanvas-body__list d-flex align-items-center">
+                <li class="offcanvas-body__item"><a class="offcanvas-body__item-link" href="#"><i class='bx bxl-facebook'></i></a></li>
+                <li class="offcanvas-body__item"><a class="offcanvas-body__item-link" href="#"><i class='bx bxl-google'></i></a></li>
+                <li class="offcanvas-body__item"><a class="offcanvas-body__item-link" href="#"><i class='bx bxl-twitter'></i></a></li>
+              </ul>
+
+              <span class="offcanvas-body__connect-info">New Account Register</span>
+              <form class="offcanvas-body__form mt-3" action="https://echo.htmlacademy.ru">
+                <input class="offcanvas-body__input" type="text" id="fname" name="fist-name" placeholder="First Name" required>
+                <input class="offcanvas-body__input" type="text" id="lname" name="last-name" placeholder="Last Name" required>
+                <input class="offcanvas-body__input" type="email" name="email" placeholder="Email Address" required> 
+                <input class="offcanvas-body__input" type="password" name="password" id="password" placeholder="Password" required>
+
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                  <label class="form-check-label" for="flexCheckDefault">
+                    I agree to the terms.
+                  </label>
+                </div>
+                <button class="offcanvas-body__btn" type="submit">Create an Account</button>
+              </form>
+
+              <div class="d-flex justify-content-between">
+                <div class="offcanvas-chek-info">
+                  <span class="offcanvas-chek-info__span">Language</span>
+                  <ul class="offcanvas-body__flags-list">
+                    <li class="offcanvas-chek-info__info"><a class="offcanvas-chek-info__link" href="#"><img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/1.jpg" alt="usa" width="17" height="11"></a></li>
+                    <li class="offcanvas-chek-info__info"><a class="offcanvas-chek-info__link" href="#"><img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/2.jpg" alt="usa" width="17" height="11"></a></li>
+                    <li class="offcanvas-chek-info__info"><a class="offcanvas-chek-info__link" href="#"><img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/3.jpg" alt="usa" width="17" height="11"></a></li>
+                    <li class="offcanvas-chek-info__info"><a class="offcanvas-chek-info__link" href="#"><img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/4.jpg" alt="usa" width="17" height="11"></a></li>
+                    <li class="offcanvas-chek-info__info"><a class="offcanvas-chek-info__link" href="#"><img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/5.jpg" alt="usa" width="17" height="11"></a></li>
+                    <li class="offcanvas-chek-info__info"><a class="offcanvas-chek-info__link" href="#"><img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/6.jpg" alt="usa" width="17" height="11"></a></li>
+                  </ul>
+                  <span class="offcanvas-chek-info__currency">Currensy</span>
+                  <div class="d-flex">
+                    <span class="offcanvas-chek-info__valuta me-2">EUR</span>
+                    <span class="offcanvas-chek-info__valuta">USD</span>
+                  </div>
+                </div>
+
+                <span class="offcanvas-body__hr-span"></span>
+
+                <div class="offcanvas-body__connect-part">
+                  <ul class="offcanvas-body__connect-list">
+                    <li class="offcanvas-body__connect-item"><a class="offcanvas-body__conect-link" href="#"><i class='bx bx-arrow-to-right'></i>Sign in</a></li>
+                    <li class="offcanvas-body__connect-item"><a class="offcanvas-body__conect-link" href="#"><i class='bx bx-user-check' ></i>My account</a></li>
+                    <li class="offcanvas-body__connect-item"><a class="offcanvas-body__conect-link" href="#"><i class='bx bxs-heart-circle'></i> Wishlist (0)</a></li>
+                    <li class="offcanvas-body__connect-item"><a class="offcanvas-body__conect-link" href="#"><i class='bx bx-chat'></i>Compare (1)</a></li>
+                    <li class="offcanvas-body__connect-item"><a class="offcanvas-body__conect-link" href="#"><i class='bx bx-checkbox-checked'></i> Checkout</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="menu-bar__item">
+          <i class='bx bx-search'  data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"></i>
+          <span class="menu-bar__span" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">search</span>
+
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+              <div class="offcanvas-header">
+                <form class="menubar-form" action="https://echo.htmlacademy.ru">
+                  <i class='bx bx-search' ></i>
+                  <input class="menubar-form__input" type="search" name="search" placeholder="Enter Keyword..." required>
+                  <span class="menubar-form__span">Search</span>
+                </form>
+              </div>
+            </div>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
   <div class="container-fluid">
     <div class="father">
 
@@ -417,6 +529,7 @@
                 <a class="hero-sale__link" href="#">Shop Now <i class='bx bx-chevrons-right'></i></a>
               </div>
             </div>
+
           </div>
 
             <ul class="hero__list">
@@ -612,6 +725,64 @@
 
             </div>
           </div> -->
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="custumers">
+            <div class="custumers-info">
+              <img class="custumers-info__img" src="img/custumer-girl.jpg" alt="custumers">
+              <div class="custumers-info__content">
+                <h2 class="custumers-info__title">A shop for good people by good people</h2>
+                <p class="custumers-info__primary-text">Buy natural, sustainable and chemicalfree products from local sellers across the country.</p>
+                <p class="custumers-info__text">We are a strong community of 100,000+ customers and 600+ sellers who aspire to be good, do good, and spread goodness. We are a democratic, self-sustaining, two-sided marketplace which thrives on trust and is built on community and quality content.</p>
+                <a class="custumers-info__link" href="#">Store Location <i class='bx bx-chevrons-right' ></i></a>
+              </div>
+            </div>
+
+            <div class="custumers__carusel custumers-carusel">
+              <div id="carouselExampleIndicators" class="carousel slide custumers-caru" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="custumers-carusel__content">
+                      <img class="custumers-carusel__img" src="img/qoshtirnoq.png" alt="">
+                      <div>
+                        <h2 class="custumers-carusel__title">wy custumer love us</h2>
+                        <p class="custumers-carusel__text">" I have love been regular custumer in Freshio and the reason is I get a variate of organic products and it gives me many opyion to choose from and the Qyality of the produce is good "</p>
+                        <span class="custumers-carusel__span">Pragya Bellandur Store</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="custumers-carusel__content">
+                      <img class="custumers-carusel__img" src="img/qoshtirnoq.png" alt="">
+                      <div>
+                        <h2 class="custumers-carusel__title">wy custumer love us</h2>
+                        <p class="custumers-carusel__text">" I have love been regular custumer in Freshio and the reason is I get a variate of organic products and it gives me many opyion to choose from and the Qyality of the produce is good "</p>
+                        <span class="custumers-carusel__span">Pragya Bellandur Store</span>
+                      </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+
+            <img class="custumers-carusel__pic" src="img/custumer-boy.jpg" alt="">
+
+          </div>
         </div>
       </section>
 
