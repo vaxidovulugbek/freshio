@@ -1,11 +1,24 @@
+@mixin btn {
+  border-radius: 5px;
+}
+@mixin list {
+  list-style: none;
+}
 
+@mixin btn-paddign {
+  padding: 10px 22px;
+}
 
+@mixin link {
+  text-decoration: none;
+}
 
-
-
-
-
-
+@mixin  b-radius {
+  border-radius: 50%;
+}
+@mixin  b-radius2 {
+  border-radius: 30px;
+}
 
 
 
