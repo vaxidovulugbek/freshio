@@ -13,15 +13,6 @@ closeBt.addEventListener("click", function(){
 })
 
 
-
-
-
-
-
-
-
-
-
 let sidebarMod = document.getElementById("sidemodal");
 let sidebarOp = document.getElementById("sideOpen");
 let closeB = document.getElementById("closBtn");
@@ -35,14 +26,6 @@ closeB.addEventListener("click", function(){
   console.log('ok');
   sidebarMod.classList.add("shww")
 })
-
-
-
-
-
-
-
-
 
 
 let sidebarMo = document.getElementById("sidemoda");

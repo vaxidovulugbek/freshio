@@ -5,12 +5,70 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: relative;
   // width: 850px;
   // height: 650px;
   // background-image: url('https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2-slide2.jpg?v=1614305184');
   // background-repeat: no-repeat;
   // background-size: cover;
 }   
+
+// HERO ANIMATION
+
+.hero-animate{
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px;
+  // background-color: #ccc;
+  height: 40vh;
+  z-index: 100;
+}
+.hero-ancontent{
+  width: 100%;
+  border: 1px solid red;
+  padding: 5px;
+  text-transform: capitalize;
+  overflow: hidden;
+  position: relative;
+}
+.for-animat{
+  font-size: 20px;
+  display: block;
+  font-size: 16px;
+  transform: translate(-200px) ;
+  animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.for-anim1{
+  font-size: 35px;
+  transform: translate(250px);
+  animation: slide-right 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@keyframes slide-left{
+  0% {
+      transform: translate(-400px);
+      transform:1s;
+  }
+  100% {
+      transform: translate(0);
+  }
+}
+@keyframes slide-right{
+  0% {
+      transform: translate(450px);
+      transform:1s;
+  }
+  100% {
+      transform: translate(0);
+  }
+}
+
 .up-btn{
   display: flex;
   align-items: center;

@@ -325,7 +325,13 @@
   cursor: pointer;
   transition: all 0.3s;
   padding: 20px 0;
-
+}
+.header-info-itemlink{
+  text-decoration: none;
+  color: $white;
+}
+.header-info-itemlink:hover{
+  color: $header-primary-color;
 }
 
 .header-info__item:hover .header-info-item__home-list{
