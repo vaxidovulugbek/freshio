@@ -32,7 +32,6 @@
   width: 300px !important;
   background-color: $header-icons-color;
 }
-
 .btn-close{
   padding: 0 !important;
   margin: 0 !important;
@@ -64,18 +63,38 @@
 .sidebar__item{
   border-top: 1px solid $border-colors;
 }
+.sidebar-details{
+  padding: 0 15px;
+  border-top: 1px solid $border-colors;
+  color: $white;
+}
+.sedebar-sumary{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: $white;
+  font-size: 14px;
+  padding: 10px 0;
+}
 .sidebar__item:nth-child(5){
   border-top: 1px solid $border-colors;
   border-bottom: 1px solid $border-colors;
 }
-// .sidebar__item-span{
-//   padding: 7px 20px !important;
-// }
+.sedebar-summay-list{
+  list-style: none;
+  padding: 0;
+}
+.sedebar-summay-list__link{
+  color: $white;
+  font-size: 14px;
+  text-decoration: none;
+}
+.sedebar-summay-list__item{
+  padding: 10px 0;
+  border-top: 1px solid $border-colors;
+}
 .sidebar__item .bx-chevrons-right{
-  // padding-right: 20px;
-  // padding: 7px 20px;
-  // border-left: 1px solid #000;
-  // border-right: 1px solid #000;
   height: 100%;
 }
 .dd{
@@ -91,9 +110,6 @@
 .shw{
   left: 0;
 }
-
-
-
 .sidebar__item-link:hover{
   color: $site-info-hover;
 }
@@ -105,8 +121,6 @@
   font-size: 14px;
   color: $white;
 }
-
-
 .closebutton{
   display: flex;
   align-items: center;
@@ -115,6 +129,20 @@
   color: $white;
   padding: 15px;
   font-size: 14px;
+}
+.category-button-res{
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: $white;
+  font-size: 14px;
+  padding: 0;
+}
+.category-button-res:hover{
+  color: $header-primary-color;
 }
 .sidebar__itemlink{
   display: flex;
@@ -131,22 +159,13 @@
   padding: 10px 15px;
   border-top: 1px solid $border-colors;
 }
-// #closeBtn{
-// position: absolute;
-// right: -333px;
-// bottom: 0;
-// }
-
-
 .offcanvas{
   overflow-y: scroll !important;
 }
-
 .sidebar__pic{
   width: 100%;
   height: 250px;
 }
-
 .header__search{
   display: flex;
   font-size: 14px;
@@ -199,7 +218,6 @@
   background-color: $header-primary-color;
   color: $white;
 }
-
 .header__list .bx-heart{
   position: relative;
   font-size: 18px;
@@ -245,7 +263,6 @@
   background-color: $header-primary-color;
   color: $white;
 }
-
 .header-info__btn{
   display: flex;
   align-items: center;
@@ -264,25 +281,22 @@
   display: flex;
   justify-content: space-between;
 }
+.header-info__content .bxs-pizza{
+  margin-right: 8px;
+}
 .header-info__category{
   width: 100%;
 }
-
 .header-info__text{
   margin: 0 0 0 10px;
   padding: 0;
   font-size: 16px;
 }
-
 .header__item .offcanvas{
   width: 300px !important;
   display: flex;
   justify-content: space-between;
 }
-
-// drop down
-
-
 .dropdown-toggle::after {
   display: none;
 }
@@ -297,431 +311,6 @@
   height: 30px;
   background-color: $header-info-span;
   display: inline-block;
-}
-
-
-
-// menu chiqishi bolimi
-
-
-
-.header-info__list{
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.header-info__item{
-  font-family: 'Mazzard Soft H Med';
-  position: relative;
-  color: $white;
-  width: 100px;
-  font-size: 14px;
-  // font-weight: 600;
-  display: flex;
-  align-items: flex-end;
-  cursor: pointer;
-  transition: all 0.3s;
-  padding: 20px 0;
-}
-.header-info-itemlink{
-  text-decoration: none;
-  color: $white;
-}
-.header-info-itemlink:hover{
-  color: $header-primary-color;
-}
-
-.header-info__item:hover .header-info-item__home-list{
-  display: block;
-  animation-name: my;
-  animation-iteration-count: 1;
-  animation-duration: 0.5s;
-  animation-fill-mode: both;
-}
-.header-info-item__home-list{
-  position: absolute;
-  bottom: -300px;
-  width: 180px;
-  padding: 20px 20px 0 20px;
-  background-color: $white;
-  z-index: 1000;
-  list-style: none;
-  // z-index: -1;
-  // transition: all 0.4s ease;
-  display: none;
-
-}
-
-.header-info-item__home-link{
-  text-decoration: none;
-  color: $color-primary;
-  text-transform: capitalize;
-}
-.header-info-item__home-link:hover{
-  color: $header-primary-color;
-}
-.header-info-item__home-item{
-  margin: 0 0 12px 0 !important;
-}
-.header-info__item:hover{
-  color: $header-primary-color;
-}
-.header-info__item .bx-chevron-down{
-  position: relative;
-  left: 3px;
-}
-.header-info__btn{
-  background-color: transparent !important;
-  box-shadow: none !important;
-}
-
-@keyframes my {
-  0%{
-    bottom: -295px;
-    display: block;
-  }
-  100%{
-    bottom: -282px;
-    display: block;
-  }
-}
-
-// .dropdown:hover{
-//   background-color: transparent !important;
-// }
-
-
-.header-info-item__shop-content{
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  bottom: -225px;
-  left: -120px;
-  padding: 20px 120px 0 20px;
-  background-color: $white;
-  // z-index: -1;
-  transition: all 0.4s ease;
-  // width: 930px !important;
-  width: 1260%;
-  display: none;
-  z-index: 1000;
-}
-.header-info__item:hover .header-info-item__shop-content{
-  display: block;
-  display: flex;
-  animation-name: my2;
-  animation-iteration-count: 1;
-  animation-duration: 0.5s;
-  animation-fill-mode: both;
-}
-.header-info-item__shop-list{
-  list-style: none;
-  padding: 0;
-}
-.header-info-item__shop-item{
-  margin: 0 0 12px 0 !important;
-}
-.header-info-item__shop-link{
-  text-decoration: none;
-  color: $color-primary;
-  text-transform: capitalize;
-}
-.header-info-item__shop-title{
-  font-family: 'Mazzard Soft H Med';
-  font-size: 16px;
-  font-weight: 600;
-  color: $black;
-}
-.header-info-item__shop-title:hover{
-  color: $header-primary-color;
-}
-.header-info-item__shop-link{
-  font-size: 14px;
-  color: $black;
-}
-.header-info-item__shop-link:hover{
-  color: $header-primary-color;
-}
-// .header-info-item:hover .header-info-item__shop-content{
-//   bottom: -210px;
-//   z-index: 1;
-// }
-@keyframes my2 {
-  0%{
-    bottom: -225px;
-  }
-  100%{
-    bottom: -215px;
-  }
-}
-
-
-
-.header-info-item__pages-list{
-  position: absolute;
-  bottom: -200px;
-  left: -220px;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: $white;
-  // z-index: -1;
-  transition: all 0.4s ease;
-  // width: 930px !important;
-  width: 1300%;
-  list-style: none;
-  display: none;
-  z-index: 1000;
-}
-.header-info__item:hover .header-info-item__pages-list{
-  display: block;
-  display: flex;
-  animation-name: my3;
-  animation-iteration-count: 1;
-  animation-duration: 0.5s;
-  animation-fill-mode: both;
-}
-// .header-info-item:hover .header-info-item__pages-list{
-//   bottom: -170px;
-//   z-index: 1;
-// }
-@keyframes my3 {
-  0%{
-    bottom: -200px;
-  }
-  100%{
-    bottom: -179px;
-  }
-}
-
-.header-info-item__pages-img{
-  position: relative;
-  bottom: 0;
-  width: 110px;
-  height: 140px;
-  border: 1px solid $border-color;
-  transition: all 0.3s ease !important;
-}
-.header-info-item__pages-img:hover{
-  position: relative;
-  bottom: 5px;
-  transition: all 0.3s ease !important;
-  border: 1px solid $header-primary-color;
-}
-
-
-
-
-
-// USER MODAL CHIQISHI
-
-
-.offcanvas-body__title{
-  font-size: 16px;
-  color: $header-primary-color;
-  text-transform: capitalize;
-  cursor: pointer;
-  margin-bottom: 16px;
-}
-.offcanvas-body__form{
-  margin-bottom: 22px;
-}
-.offcanvas-body__input{
-  width: 100%;
-  outline: none;
-  padding: 6px 16px;
-  color: $header-input-color;
-  margin-bottom: 16px;
-  border: 1px solid $header-input-color;
-  border-radius: 6px;
-  font-size: 14px;
-}
-.offcanvas-body__input:focus{
-  border: 1px solid $header-primary-color;
-}
-.offcanvas-body__check{
-  display: flex;
-  align-items: center ;
-  justify-content: space-between;
-  margin-bottom: 16px;
-}
-.form-check{
-  display: flex;
-  align-items: center;
-  font-size: 13px;
-  color: $color-primary;
-}
-.form-check-input{
- margin: 0 4px 0 0;
-}
-.offcanvas-body__forgot{
-  text-decoration: none;
-  font-size: 13px;
-  color: $color-primary;
-}
-.offcanvas-body__btn{
-  width: 100%;
-  padding: 6px 0;
-  border: none;
-  border-radius: 20px;
-  color: $white;
-  background-color: $site-info-hover;
-}
-.offcanvas-body__connect-info{
-  font-size: 16px;
-  color: $header-primary-color;
-}
-.offcanvas-body__list{
-  list-style: none;
-  padding: 0;
-  margin: 10px 0 20px 0;
-}
-.offcanvas-body__item-link .bxl-facebook{
-  background-color: $blue;
-  padding: 10px;
-  border-radius: 50%;
-  color: $white;
-  margin-right: 5px;
-}
-.offcanvas-body__item-link .bxl-google{
-  background-color: $blue-pri;
-  padding: 10px;
-  border-radius: 50%;
-  color: $white;
-  margin-right: 5px;
-}
-.offcanvas-body__item-link .bxl-twitter{
-  background-color: $blue-sky;
-  padding: 10px;
-  border-radius: 50%;
-  color: $white;
-  margin-right: 5px;
-}
-.offcanvas-chek-info__span{
-  font-size: 14px;
-  margin-bottom: 10px;
-  color: $primari-white;
-}
-.offcanvas-body__flags-list{
-  padding: 0;
-  width: 100px;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 10px;
-}
-.offcanvas-chek-info__info{
-  padding: 0 5px;
-}
-.offcanvas-chek-info__currency{
-  font-size: 14px;
-  margin-bottom: 8px;
-  color: $primari-white;
-}
-.offcanvas-chek-info__valuta{
-  font-size: 13px;
-  color: $primari-white;
-  cursor: pointer;
-}
-.offcanvas-chek-info__valuta:hover{
-  color: $site-info-hover;
-}
-.offcanvas-body__connect-list{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  list-style: none;
-  padding: 0;
-}
-.offcanvas-body__connect-item{
-  display: flex;
-  align-items: center;
-  margin-bottom: 8px;
-}
-.offcanvas-body__conect-link{
-  font-size: 13px;
-  color: $primari-white;
-  text-decoration: none;
-}
-.offcanvas-body__conect-link:hover{
-  color: $site-info-hover;
-}
-.offcanvas-body__hr-span{
-  width: 1px;
-  height: 130px;
-  background-color: $border-color;
-}
-
-.header-contact__call{
-  font-family: 'Mazzard Soft H Med';
-  margin: 0 0 5px 0;
-  font-size: 12px;
-  color: $black;
-  font-weight: 600;
-}
-.header-contact__tel{
-  color: $site-info-hover;
-  font-size: 18px;
-}
-.header-contacts {
-  display: flex;
-}
-
-@media screen and (max-width:1300px) {
-  .header-info-item__pages-img{
-    width: 100px;
-  }
-}
-@media screen and (max-width:1200px) {
-  .header-info-item__pages-list{
-    width: 1350%;
-  }
-}
-@media screen and (max-width:1100px){
-  .header-info-item__pages-img{
-    width: 90px;
-  }
-  .header-info__content{
-    width: 70%;
-  }
-}
-@media screen and (max-width:990px) {
-  .header__search{
-    display: none;
-  }
-  .header__item--activ{
-    display: none;
-  }
-  .header__list{
-    width: unset;
-  }
-  .header__btn{
-    display: block;
-  }
-  .header__item{
-    margin-left:0;
-  }
-  .header-info__list{
-    display: none;
-  }
-  .header-info__content{
-    height: 50px;
-  }
-  .header-info__content{
-    width: 100%;
-  }
-  .dropdown::after{
-    display: none;
-  }
-  .sidebar{
-    display: block;
-  }
-  .header-contacts{
-    display: none;
-  }
 }
 
 .shww{

@@ -54,8 +54,6 @@
   height: 0.5px;
   background-color: $site-info-hover;
 }
-
-
 .custumers-carusel{
   width: 100%;
   display: flex;
@@ -65,7 +63,6 @@
 .custumers-caru{
   width: 40%;
 }
-
 .custumers-carusel__img{
   width: 48px;
   height: 38px;
@@ -90,14 +87,32 @@
   font-size: 14px;
   color: $primari-white;
 }
-
 .custumers-carusel__pic{
   width: 45%;
   object-fit: cover;
   border-radius: 10px;
-  // height: 300px;
 }
-
+.carousel-inner{
+  position: relative;
+}
+.carousel-inner .carousel-control-prev{
+  position: absolute;
+  top: 86%;
+  left: 48%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000;
+}
+.carousel-inner .carousel-control-next{
+  position: absolute;
+  top: 86%;
+  left: 52%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000;
+}
 
 @media screen and (max-width:760px){
   .custumers-info{

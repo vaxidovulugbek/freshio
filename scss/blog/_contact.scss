@@ -2,6 +2,8 @@
 
 .contact{
   padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
 }
 .contact__name{
   width: 25%;
@@ -26,7 +28,101 @@
 .contact__fre{
   padding-top: 20px;
 }
+.contact-form{
+  width: 70%;
+  padding: 35px;
+  border: 1px solid $border-color;
+}
+.contact-form__title{
+  font-size: 18px;
+  color: $contact-title;
+  margin-bottom: 16px;
+}
+.contact-form__sub{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.contact-form-subject{
+  font-size: 14px;
+  color: $contact-title;
+  margin: 0;
+}
+.contact-form__sub .dropdown{
+  width: 70% ;
+  color: $primari-white;
+  background-color: $btn-4;
+  border-radius: 4px;
+}
+.contact-form__emails{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.contact-form__email-input{
+  width: 70%;
+  font-size: 14px;
+  outline: none;
+  border: 1px solid $border-color;
+  padding: 8px 20px;
+  border-radius: 4px;
+}
+.contact-form__attech{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
 
+.contact-form__messages{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.form-floating{
+  width: 70%;
+  color: $border-color;
+}
+.contact-form__button{
+  display: flex;
+  justify-content: space-between;
+}
+.contact-form__btn{
+  font-family: 'Mazzard Soft H Med';
+  padding: 8px 23px;
+  border: none;
+  color: $black;
+  background-color: $header-primary-color;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.contact-form__attech .contact-form__fayl{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+.contact-form__sub .dropdown-menu{
+  width: 100% !important;
+  left: 0 !important;
+  top: 0 !important;
+}
 
+@media screen and (max-width:760px) {
+  .contact{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .contact__name{
+    margin-bottom: 30px;
+  }
+  .contact-form{
+    width: 100%;
+  }
+}
 
 

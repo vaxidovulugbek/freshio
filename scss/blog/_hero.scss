@@ -6,11 +6,6 @@
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
-  // width: 850px;
-  // height: 650px;
-  // background-image: url('https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2-slide2.jpg?v=1614305184');
-  // background-repeat: no-repeat;
-  // background-size: cover;
 }   
 
 // HERO ANIMATION
@@ -24,13 +19,11 @@
   justify-content: flex-start;
   align-items: center;
   padding: 50px;
-  // background-color: #ccc;
   height: 40vh;
   z-index: 100;
 }
 .hero-ancontent{
   width: 100%;
-  border: 1px solid red;
   padding: 5px;
   text-transform: capitalize;
   overflow: hidden;
@@ -40,15 +33,56 @@
   font-size: 20px;
   display: block;
   font-size: 16px;
-  transform: translate(-200px) ;
-  animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  transform: translate(-200px);
+  animation: slide-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 .for-anim1{
+  font-size: 40px !important;
+  color: $title;
+  margin-bottom: 25px;
   font-size: 35px;
   transform: translate(250px);
   animation: slide-right 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-
+.for-animat-span{
+  font-family: 'Dancing Script', cursive;
+  font-size: 24px;
+  font-weight: 500;
+  color: $site-info-hover;
+  margin-bottom: 25px;
+}
+.for-animat-link{
+  font-family: 'Mazzard Soft H Med';
+  position: relative;
+  font-size: 13px;
+  text-decoration: none;
+  align-items: center;
+  color: $black;
+  font-weight: 600;
+}
+.for-animat-link::before{
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  display: inline-block;
+  width: 75px;
+  height: 1px;
+  background-color: $black;
+}
+.for-animat-link:hover{
+  color: $site-info-hover;
+}
+.for-animat-link:hover::before{
+  background-color: $site-info-hover;
+}
+.for-animat-link:hover .bx-chevrons-right{
+  transform: translateX(4px);
+}
+.for-animat-link .bx-chevrons-right{
+  position: relative ;  
+  top: 2px;
+}
 
 @keyframes slide-left{
   0% {
@@ -89,12 +123,10 @@
 .up-btn:hover{
   background-color: $btn-3;
 }
-
 .hero .carousel{
   position: relative;
   width: 65%;
   z-index: 1 !important;
-  // height: 650px;
 }
 .hero .slide{
   z-index: 1 !important;
@@ -177,8 +209,6 @@
 .hero-flowers__link:hover .bx-chevrons-right{
   transform: translate(4px);
 }
-
-
 .hero-sale{
   background-image: url('../../img/freshio_h2-bn2.jpg');
   background-repeat: no-repeat;
@@ -224,8 +254,6 @@
   transform: translate(4px);
   transition: all 0.4s ease;
 }
-
-
 .hero__list{
   list-style: none;
   display: flex;
@@ -273,10 +301,29 @@
   .hero-flowers{
     margin-bottom: 35px;
   }
+  .for-anim1{
+    font-size: 40px;
+  }
+}
+@media screen and (max-width:1200px) {
+  .hero-ancontent {
+    width: 100%;
+  }
+  .hero-animate{
+    width: 60%;
+  }
 }
 @media screen and (max-width:1100px){
   .hero-flowers{
     margin-bottom: 20px;
+  }
+  .hero-animate{
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    width: 60%;
+    height: 40vh;
+    padding: 40px;
   }
 }
 @media screen and (max-width:990px){
@@ -309,6 +356,25 @@
 .up-btn{
   display: none;
 }
+.hero-animate{
+  position: absolute;
+  top: 70px;
+  left: 70px;
+  width: 50%;
+  height: 40vh;
+  padding: 40px;
+}
+.hero-ancontent{
+  width: 90%;
+}
+}
+@media screen and (max-width:800px){
+  .hero-ancontent {
+    width: 100%;
+  }
+  .hero-animate{
+    width: 65%;
+  }
 }
 @media screen and (max-width:760px){
   .hero__discover{
@@ -326,7 +392,29 @@
   .hero .carousel-control-prev{
     left: 77%;
   }
+  .hero-animate{
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    width: 60%;
+    height: 40vh;
+    padding: 40px;
+  }
+  .for-anim1{
+    margin-bottom: 20px;
+  }
+  .for-animat-span{
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .hero-ancontent {
+    width: 100%;
+  }
+  .hero-animate{
+    width: 65%;
+  }
 }
+
 @media screen and (max-width:576px){
   .hero__list{
     display: flex;
@@ -340,7 +428,20 @@
   .hero .carousel-control-prev{
     left: 73%;
   }
+  .hero-animate{
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    width: 90%;
+    height: 40vh;
+  }
 }
-
-
-
+@media screen and (max-width:500px){
+  .for-anim1{
+    margin-bottom: 15px;
+  }
+  .for-animat-span{
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+}

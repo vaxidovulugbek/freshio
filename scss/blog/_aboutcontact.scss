@@ -6,7 +6,6 @@
 }
 .about-contact-me{
   display: flex;
-  // justify-content: space-between;
   align-items: center;
   width: 48%;
   padding: 40px 0;
@@ -65,7 +64,6 @@
   padding:5px 15px;
   border-radius: 50px;
   border: 1px solid $white-pri-border;
-  
 }
 .about-contact-me__input{
   border: none;

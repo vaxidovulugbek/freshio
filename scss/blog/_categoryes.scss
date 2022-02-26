@@ -1,7 +1,6 @@
 
 .categories{
   width: 100%;
-  // display: flex;
   padding: 0;
   display: grid;
   height: 460px;
@@ -14,8 +13,6 @@
   background-image: url('../../img/category-fruit.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  // width: 20%;
-  // height: 460px;
   padding: 20px;
   border-radius: 6px;
   display: flex;
@@ -73,7 +70,6 @@
 .categories__fruit:hover .categories__span{
   transform: scale(1.7);
 }
-
 .categories__bred{
   background-image: url('../../img/category-bred.jpg');
   background-repeat: no-repeat;
@@ -82,7 +78,6 @@
   border-radius: 6px;
   display: flex;
   flex-direction: column;
-  // align-items: center;
   transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
@@ -99,7 +94,6 @@
   color: $white;
   font-size: 20px;
   text-align: center;
-  // width: 30%;
   padding: 50px 0 20px 0;
 }
 .categories__bred-span{
@@ -108,8 +102,6 @@
   height: 1px;
   background-color: $white;
   transition: all 0.4s ease;
-  // position: relative;
-  // left: 45px;
 }
 .categories__bred:hover .categories__bred-span{
   transform: scale(1.7);
@@ -142,9 +134,6 @@
   top: 0;
   left: 0;
 }
-
-
-
 .categories__package{
   background-image: url('../../img/categoryes-package.jpg');
   background-repeat: no-repeat;
@@ -169,7 +158,6 @@
   color: $white;
   font-size: 20px;
   text-align: center;
-  // width: 40%;
   padding: 50px 0 20px 0;
   margin: 0;
 }
@@ -179,8 +167,6 @@
   height: 1px;
   background-color: $white;
   transition: all 0.4s ease;
-  // position: relative;
-  // left: 25px;
 }
 .categories__package:hover .categories__package-span{
   transform: scale(1.7);
@@ -213,9 +199,6 @@
   top: 0;
   left: 0;
 }
-
-
-
 .categories__bevarage{
   background-image: url('../../img/category-beverage.jpg');
   background-repeat: no-repeat;
@@ -240,7 +223,6 @@
   color: $white;
   font-size: 20px;
   text-align: center;
-  // width: 40%;
   padding: 50px 0 20px 0;
   margin: 0;
 }
@@ -250,8 +232,6 @@
   height: 1px;
   background-color: $white;
   transition: all 0.4s ease;
-  // position: relative;
-  // left: 25px;
 }
 .categories__bevarage:hover .categories__bevarage-span{
   transform: scale(1.7);
@@ -284,13 +264,6 @@
   top: 0;
   left: 0;
 }
-
-
-
-
-
-
-
 .categories__health{
   background-image: url('../../img/category-health.jpg');
   background-repeat: no-repeat;
@@ -353,11 +326,6 @@
   left: 0;
 }
 
-// .categories:nth-child(1) {
-//   grid-column: 1 / 4;
-//   grid-row: 1 / 4;
-// }
-
 @media screen and (max-width:990px){
   .categories__fruit-title{
     width: 90%;
@@ -371,7 +339,6 @@
   .categories__package-content{
     width: 100%;
   }
-  
 }
 
 @media screen and (max-width:760px) {

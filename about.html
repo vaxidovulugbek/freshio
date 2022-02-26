@@ -9,7 +9,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
   <title>imtihon-3 about-page</title>
 
-
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -18,7 +17,6 @@
 </head>
 
 <body>
- 
   <section>
     <div class="menu-bar">
       <ul class="menu-bar__list">
@@ -33,13 +31,10 @@
         <li class="menu-bar__item">
           <i class='bx bx-user' data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" ></i>
           <span class="menu-bar__span"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">accaund</span>
-        
-        
         </li>
         <li class="menu-bar__item">
           <i class='bx bx-search'  data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"></i>
           <span class="menu-bar__span" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">search</span>
-
             <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
               <div class="offcanvas-header">
                 <form class="menubar-form" action="https://echo.htmlacademy.ru">
@@ -50,12 +45,11 @@
               </div>
             </div>
         </li>
-
       </ul>
     </div>
   </section> 
 
-  <div class="father">
+  <div class="contently">
     <a href="#">
       <button class="up-btn">
         <i class='bx bx-chevrons-up'></i>
@@ -64,23 +58,18 @@
     <section>
         <div class="about-header">
           <div class="container-inner">
-
           <div class="header__site d-flex align-items-center justify-content-between">
-
-
             <div class="sidebar">
               <button class="header__btn" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
                   class='bx bx-menu'></i></button>
               <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
                 aria-labelledby="offcanvasWithBothOptionsLabel">
-
                 <div class="offcanvas-header">
                   <button type="button" class="btn-close text-reset " data-bs-dismiss="offcanvas"
                     aria-label="Close"></button>
                   <p class="sidebar__close" data-bs-dismiss="offcanvas">Close</p>
                 </div>
-
                 <div class="offcanvas-body">
                   <ul class="sidebar__list">
                     <li class="sidebar__item"><a class="sidebar__item-link" href="#"><span
@@ -101,7 +90,6 @@
                           <li class="sidebar__item-home"><a class="sidebar__itemlink" href="index.html">Home 8</a></li>
                         </ul>
                       </div>
-
                     </li>
                     <li class="sidebar__item sidebar-open"><a class="sidebar__item-link" href="#"><span
                           class="sidebar__item-span">shop</span> <button id="sideOpen" class="sidebar__item-btn"><i
@@ -109,37 +97,58 @@
                       <div class="dd" id="sidemodal">
                         <button class="closebutton" id="closBtn"><i class='bx bx-chevrons-left'></i>Back to
                           home</button>
-                        <ul class="sidebar__list">
-                          <li class="sidebar__item-home"><a class="sidebar__itemlink" href="#">Categories 1 <button
-                                id="sideOpendBtn"><i class='bx bxs-chevrons-down'></i></button></a>
-                            <div class="dd" id="sedemodales">
-
-                              <button class="closebutton" id="closebt"><i class='bx bx-chevrons-left'></i>Back to
-                                home</button>
-                              <ul class="sidebar__list sidebar__listd">
-                                <li>
-
-
-
-                                  <!-- shu joyiga menyu responsiv yozilai -->
-
-
-
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li class="sidebar__item-home"><a class="sidebar__itemlink" href="#">Categories 2 <i
-                                class='bx bxs-chevrons-down'></i></a></li>
-                          <li class="sidebar__item-home"><a class="sidebar__itemlink" href="#">Categories 3 <i
-                                class='bx bxs-chevrons-down'></i></a></li>
-                          <li class="sidebar__item-home"><a class="sidebar__itemlink" href="#">Categories 4 <i
-                                class='bx bxs-chevrons-down'></i></a></li>
-                        </ul>
+                         <ul class="sidebar__list">
+                              <li>
+                                <details class="sidebar-details">
+                                  <summary class="sedebar-sumary">Categories 1 <i class='bx bxs-chevrons-down'></i></summary>
+                                  <ul class="sedebar-summay-list">
+                                    <li class="sedebar-summay-list__item"><a class="sedebar-summay-list__link" href="#">Vegatable</a></li>
+                                    <li class="sedebar-summay-list__item"><a class="sedebar-summay-list__link" href="#">Tomato</a></li>
+                                    <li class="sedebar-summay-list__item"><a class="sedebar-summay-list__link" href="#">Cobbage</a></li>
+                                    <li class="sedebar-summay-list__item"><a class="sedebar-summay-list__link" href="#">Juise</a></li>
+                                    <li class="sedebar-summay-list__item"><a class="sedebar-summay-list__link" href="#">Meat</a></li>
+                                  </ul>
+                                </details>
+                              </li>
+                              <li>
+                                <details class="sidebar-details">
+                                  <summary class="sedebar-sumary">Categories 1 <i class='bx bxs-chevrons-down'></i></summary>
+                                  <ul class="sedebar-summay-list">
+                                    <li class="sedebar-summay-list__item"><a class="sedebar-summay-list__link" href="#">Beef</a></li>
+                                    <li class="sedebar-summay-list__item"><a class="sedebar-summay-list__link" href="#">Pork</a></li>
+                                    <li class="sedebar-summay-list__item"><a class="sedebar-summay-list__link" href="#">Coconut</a></li>
+                                    <li class="sedebar-summay-list__item"><a class="sedebar-summay-list__link" href="#">Broccoli</a></li>
+                                    <li class="sedebar-summay-list__item"><a class="sedebar-summay-list__link" href="#">Fish</a></li>
+                                  </ul>
+                                </details>
+                              </li>
+                              <li>
+                                <details class="sidebar-details">
+                                  <summary class="sedebar-sumary">Categories 1 <i class='bx bxs-chevrons-down'></i></summary>
+                                  <ul class="sedebar-summay-list">
+                                    <li class="sedebar-summay-list__item"><a class="sedebar-summay-list__link" href="#">Seafood</a></li>
+                                    <li class="sedebar-summay-list__item"><a class="sedebar-summay-list__link" href="#">Octopus</a></li>
+                                    <li class="sedebar-summay-list__item"><a class="sedebar-summay-list__link" href="#">Fish</a></li>
+                                    <li class="sedebar-summay-list__item"><a class="sedebar-summay-list__link" href="#">Pork</a></li>
+                                    <li class="sedebar-summay-list__item"><a class="sedebar-summay-list__link" href="#">More</a></li>
+                                  </ul>
+                                </details>
+                              </li>
+                              <li>
+                                <details class="sidebar-details">
+                                  <summary class="sedebar-sumary">Categories 1 <i class='bx bxs-chevrons-down'></i></summary>
+                                  <ul class="sedebar-summay-list">
+                                    <li class="sedebar-summay-list__item"><a class="sedebar-summay-list__link" href="#">Vegatable</a></li>
+                                    <li class="sedebar-summay-list__item"><a class="sedebar-summay-list__link" href="#">Fresh Meat</a></li>
+                                    <li class="sedebar-summay-list__item"><a class="sedebar-summay-list__link" href="#">Fruit & Nut</a></li>
+                                    <li class="sedebar-summay-list__item"><a class="sedebar-summay-list__link" href="#">Fresh Berries</a></li>
+                                    <li class="sedebar-summay-list__item"><a class="sedebar-summay-list__link" href="#">Fat Freezing</a></li>
+                                  </ul>
+                                </details>
+                              </li>
+                            </ul>
                       </div>
                     </li>
-
-
                     <li class="sidebar__item sidebar-open"><a class="sidebar__item-link" href="#"><span
                           class="sidebar__item-span"> pages</span> <button id="sideOpend" class="sidebar__item-btn"><i
                             class='bx bx-chevrons-right'></i></button></a>
@@ -163,7 +172,6 @@
                                 src="img/img-fluid-six.jpg" alt=""></a></li>
                         </ul>
                       </div>
-
                     </li>
                     <li class="sidebar__item sidebar-open"><a class="sidebar__item-link" href="#"><span
                           class="sidebar__item-span">blog</span></a></li>
@@ -173,18 +181,12 @@
                 </div>
               </div>
             </div>
-
-            <!-- user modal -->
-
-
             <a class="header__logo" href="index.html"><img src="img/logo.jpg" alt="logo" width="130" height="71"></a>
             <div class="header__search  align-items-center justify-content-between">
               <i class='bx bx-search'></i>
               <input class="header__input" type="search" name="search" placeholder="Enter Keyword...">
               <span class="header__search-span">search</span>
             </div>
-            
-
             <div class="header-contacts  align-items-center">
               <img class="me-3" src="img/aboutcontact-img.png" alt="" width="36" height="36">
               <div class="header-contact">
@@ -192,15 +194,9 @@
                 <span class="header-contact__tel">(1800)-88-66-991</span>
               </div>
             </div>
-
-            <!-- user modal chiqishi -->
-
             <ul class="header__list d-flex align-items-center">
               <li class="header__item header__item--activ"><i class='bx bx-user' data-bs-toggle="offcanvas"
                   data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
-                  
-                
-                  
                 </li>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
                   aria-labelledby="offcanvasRightLabel">
@@ -227,7 +223,6 @@
                       </div>
                       <button class="offcanvas-body__btn" type="submit">Login</button>
                     </form>
-
                     <span class="offcanvas-body__connect-info">Connect with Social Networks</span>
                     <ul class="offcanvas-body__list d-flex align-items-center">
                       <li class="offcanvas-body__item"><a class="offcanvas-body__item-link" href="#"><i
@@ -237,7 +232,6 @@
                       <li class="offcanvas-body__item"><a class="offcanvas-body__item-link" href="#"><i
                             class='bx bxl-twitter'></i></a></li>
                     </ul>
-
                     <span class="offcanvas-body__connect-info">New Account Register</span>
                     <form class="offcanvas-body__form mt-3" action="https://echo.htmlacademy.ru">
                       <input class="offcanvas-body__input" type="text" id="fname" name="fist-name"
@@ -248,7 +242,6 @@
                         required>
                       <input class="offcanvas-body__input" type="password" name="password" id="password"
                         placeholder="Password" required>
-
                       <div class="form-check mb-3">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
                         <label class="form-check-label" for="flexCheckDefault">
@@ -257,7 +250,6 @@
                       </div>
                       <button class="offcanvas-body__btn" type="submit">Create an Account</button>
                     </form>
-
                     <div class="d-flex justify-content-between">
                       <div class="offcanvas-chek-info">
                         <span class="offcanvas-chek-info__span">Language</span>
@@ -287,9 +279,7 @@
                           <span class="offcanvas-chek-info__valuta">USD</span>
                         </div>
                       </div>
-
                       <span class="offcanvas-body__hr-span"></span>
-
                       <div class="offcanvas-body__connect-part">
                         <ul class="offcanvas-body__connect-list">
                           <li class="offcanvas-body__connect-item"><a class="offcanvas-body__conect-link" href="#"><i
@@ -307,11 +297,6 @@
                     </div>
                   </div>
                 </div>
-
-
-                  <!-- user modal end of -->
-
-
               <li class="header__item header-item header__item--activ"><i class='bx bx-heart'></i>
                 <span class="header-item-span">0</span>
               </li>
@@ -319,27 +304,10 @@
                 <span class="header-item-span">0</span>
               </li>
             </ul>
-
           </div>       
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
           <div class="header__navigations header-info d-flex align-items-center">
             <div class="container">
-
               <div class="header-info__content">
                 <div class="header-info__category d-flex align-items-center">
                   <div class="dropdown  dropdown-actives">
@@ -350,11 +318,11 @@
                       <li><span class="dropdown-menu__pyrmid"></span></li>
                       <li>
                         <a class="dropdown-item" href="#">
-                          <div><i class='bx bxs-pizza' ></i> fruit & vegatables</div>
+                          <div class="d-flex align-items-center"><i class='bx bxs-pizza' ></i> fruit & vegatables</div>
                         </a>
                       </li>
                       <li class="dropdown-menu__item">
-                        <a class="dropdown-item" href="#"><div class="dropdown-i-div"><i class='bx bxs-pizza' ></i> supplyments </div><i class='bx bx-chevron-right' ></i> </a>
+                        <a class="dropdown-item" href="#"><div class="dropdown-i-div d-flex align-items-center"><i class='bx bxs-pizza' ></i> supplyments </div><i class='bx bx-chevron-right' ></i> </a>
                         <ul class="dropdown-menuitem-list">
                           <li class="m-1"><a class="dropdown-menu__item-link" href="#">Vegatables</a></li>
                           <li class="m-1"><a class="dropdown-menu__item-link" href="#">Fresh meat</a></li>
@@ -363,7 +331,7 @@
                         </ul>
                       </li>
                       <li class="dropdown-menu__item">
-                        <a class="dropdown-item" href="#"><div class="dropdown-i-div"><i class='bx bxs-pizza' ></i> dairy bread & eggs </div><i class='bx bx-chevron-right' ></i></a>
+                        <a class="dropdown-item" href="#"><div class="dropdown-i-div d-flex align-items-center"><i class='bx bxs-pizza' ></i> dairy bread & eggs </div><i class='bx bx-chevron-right' ></i></a>
                         <ul class="dropdown-menuitem-list">
                           <li class="m-1"><a class="dropdown-menu__item-link" href="#">Egg sendvich</a></li>
                           <li class="m-1"><a class="dropdown-menu__item-link" href="#">Easter bread</a></li>
@@ -372,10 +340,10 @@
                         </ul>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#"><div><i class='bx bxs-pizza' ></i> package foods</div></a>
+                        <a class="dropdown-item" href="#"><div class="d-flex align-items-center"><i class='bx bxs-pizza' ></i> package foods</div></a>
                       </li>
                       <li class="dropdown-menu__item">
-                        <a class="dropdown-item" href="#"><div class="dropdown-i-div"><i class='bx bxs-pizza' ></i> beauty & care </div><i class='bx bx-chevron-right' ></i></a>
+                        <a class="dropdown-item" href="#"><div class="dropdown-i-div d-flex align-items-center"><i class='bx bxs-pizza' ></i> beauty & care </div><i class='bx bx-chevron-right' ></i></a>
                         <ul class="dropdown-menuitem-list">
                           <li class="m-1"><a class="dropdown-menu__item-link" href="#">Challah</a></li>
                           <li class="m-1"><a class="dropdown-menu__item-link" href="#">Fat freezing</a></li>
@@ -384,22 +352,20 @@
                         </ul>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#"><div><i class='bx bxs-pizza' ></i> health & wellness</div></a>
+                        <a class="dropdown-item" href="#"><div class="d-flex align-items-center"><i class='bx bxs-pizza' ></i> health & wellness</div></a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#"><div><i class='bx bxs-pizza' ></i> baby & care</div></a>
+                        <a class="dropdown-item" href="#"><div class="d-flex align-items-center"><i class='bx bxs-pizza' ></i> baby & care</div></a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#"><div><i class='bx bxs-pizza' ></i> home care</div></a>
+                        <a class="dropdown-item" href="#"><div class="d-flex align-items-center"><i class='bx bxs-pizza' ></i> home care</div></a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#"><div><i class='bx bxs-pizza' ></i> hot offers</div></a>
+                        <a class="dropdown-item" href="#"><div class="d-flex align-items-center"><i class='bx bxs-pizza' ></i> hot offers</div></a>
                       </li>
                     </ul>
                   </div>
-  
                 </div>
-                <!-- <span class="header-info__span"></span> -->
                 <ul class="header-info__list  align-items-center">
                   <li class="header-info__item header-info-item">home<i class='bx bx-chevron-down'></i>
                     <ul class="header-info-item__home-list">
@@ -483,9 +449,7 @@
                         <li class="header-info-item__shop-item"><a class="header-info-item__shop-link" href="#">fat
                             freezing</a></li>
                       </ul>
-  
                     </div>
-  
                   </li>
                   <li class="header-info__item header-info-item">pages<i class='bx bx-chevron-down'></i>
                     <ul class="header-info-item__pages-list">
@@ -509,13 +473,10 @@
                   <li class="header-info__item"><a class="header-info-itemlink" href="contact.html">contact</a></li>
                 </ul>
               </div>
-
             </div>
-
           </div>
         </div>
     </section>
-
 
     <main>
       <section class="about-page">
@@ -636,16 +597,11 @@
         </div>
       </div>
     </footer>
-
   </div>
-
-
-
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
   </script>
   <script src="js/main.js"></script>
 </body>
-
 </html>

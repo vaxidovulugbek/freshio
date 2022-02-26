@@ -2,7 +2,6 @@
 
 .menu-bar{
   position: fixed;
-  // bottom: 0;
   top: 90vh;
   width: 100%;
   z-index: 2000;
@@ -43,14 +42,12 @@
   font-size: 20px;
   color: $title;
 }
-
 .menubar-form{
   width: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  // border: 1px solid #000;
   background-color: $header-inputs-color;
   border-radius: 30px;
 }
@@ -71,7 +68,6 @@
 .menubar-form__span:hover{
   color: $site-info-hover;
 }
-
 .menu-bar__item .offcanvas-top{
   height: 90px !important;
 }
