@@ -37,7 +37,7 @@
   animation: slide-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
 }
 .for-anim1{
-  font-size: 40px !important;
+  font-size: 40px;
   color: $title; 
   margin-bottom: 25px;
   font-size: 35px;
@@ -430,19 +430,38 @@
     left: 73%;
   }
   .hero-animate{
-    position: absolute;
-    top: 50px;
-    left: 10px;
-    width: 90%;
-    height: 40vh;
+    top: 10px;
+  }
+  .for-anim1 {
+    font-size: 34px;
   }
 }
 @media screen and (max-width:500px){
   .for-anim1{
     margin-bottom: 15px;
+    font-size: 28px !important;
   }
   .for-animat-span{
     font-size: 20px;
     margin-bottom: 15px;
+  }
+  .hero-animate{
+    top: 0px;
+    padding: 0;
+  }
+}
+@media screen and (max-width:400px){
+  .hero-animate{
+    top: -30px;
+  }
+  .for-anim1{
+    margin-bottom: 15px;
+    font-size: 24px !important;
+  }
+}
+@media screen and (max-width:350px){
+  .hero-animate{
+    top: -65px;
+    left: 40px;
   }
 }
