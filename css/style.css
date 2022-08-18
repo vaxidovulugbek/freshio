@@ -4013,9 +4013,10 @@
 
 body {
   font-family: 'Mazzard Soft H';
-  background-image: url("../img/body-bg-img.jpg");
+  background-image: url("../img/body-bg-img.jpg"), url("../img/body-bg-up.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top 300px;
   width: 100%;
   height: 300px;
   display: -webkit-box;
@@ -4033,5 +4034,6 @@ body {
 
 .contently {
   background-color: #fff;
+  margin-bottom: 70px;
 }
 /*# sourceMappingURL=style.css.map */

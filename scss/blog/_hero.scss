@@ -34,11 +34,11 @@
   display: block;
   font-size: 16px;
   transform: translate(-200px);
-  animation: slide-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
 }
 .for-anim1{
   font-size: 40px !important;
-  color: $title;
+  color: $title; 
   margin-bottom: 25px;
   font-size: 35px;
   transform: translate(250px);
@@ -123,6 +123,7 @@
 .up-btn:hover{
   background-color: $btn-3;
 }
+
 .hero .carousel{
   position: relative;
   width: 65%;
